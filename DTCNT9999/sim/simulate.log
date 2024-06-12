@@ -1,0 +1,56 @@
+# Reading G:/Modesim_10_6/tcl/vsim/pref.tcl
+# do sim.do
+# ** Error: (vlib-35) Failed to create directory "work".
+# File exists. (errno = EEXIST)
+# Model Technology ModelSim DE-64 vmap 10.6c Lib Mapping Utility 2017.07 Jul 26 2017
+# vmap work ./work 
+# Modifying modelsim.ini
+# Model Technology ModelSim DE-64 vcom 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 16:20:01 on Jun 09,2024
+# vcom -reportprogress 300 G:/github_project/FPGA-EDA/DTCNT9999/sim/../src/CNT10.vhd G:/github_project/FPGA-EDA/DTCNT9999/sim/../src/CTRLS.vhd G:/github_project/FPGA-EDA/DTCNT9999/sim/../src/DISPLAY.vhd G:/github_project/FPGA-EDA/DTCNT9999/sim/../src/DTCNT9999.vhd G:/github_project/FPGA-EDA/DTCNT9999/sim/../src/tb_DTCNT9999.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity CNT10
+# -- Compiling architecture ART of CNT10
+# -- Compiling entity CTRLS
+# -- Compiling architecture ART of CTRLS
+# -- Compiling entity DISPLAY
+# -- Compiling architecture ART of DISPLAY
+# -- Compiling entity DTCNT9999
+# -- Compiling architecture ART of DTCNT9999
+# -- Compiling entity tb_DCNT9999
+# -- Compiling architecture art of tb_DCNT9999
+# End time: 16:20:01 on Jun 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# tb_DCNT9999
+# vsim -t 1ps -voptargs=""+acc"" tb_DCNT9999 
+# Start time: 16:20:01 on Jun 09,2024
+# //  ModelSim DE-64 10.6c Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim DE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.tb_dcnt9999(art)
+# Loading work.dtcnt9999(art)
+# Loading work.cnt10(art)
+# Loading work.ctrls(art)
+# Loading work.display(art)
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree

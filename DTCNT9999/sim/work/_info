@@ -1,0 +1,211 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/github_project/FPGA-EDA/DTCNT9999/sim
+Ecnt10
+Z1 w1680152188
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8G:/github_project/FPGA-EDA/DTCNT9999/sim/../src/CNT10.vhd
+Z7 FG:/github_project/FPGA-EDA/DTCNT9999/sim/../src/CNT10.vhd
+l0
+L4
+VIG9=4<T5fVVijO51>5R1?1
+!s100 dS;aV;?k?E2_mnQgC^HPI2
+Z8 OP;C;10.6c;65
+32
+Z9 !s110 1717921201
+!i10b 1
+Z10 !s108 1717921201.000000
+Z11 !s90 -reportprogress|300|G:/github_project/FPGA-EDA/DTCNT9999/sim/../src/CNT10.vhd|G:/github_project/FPGA-EDA/DTCNT9999/sim/../src/CTRLS.vhd|G:/github_project/FPGA-EDA/DTCNT9999/sim/../src/DISPLAY.vhd|G:/github_project/FPGA-EDA/DTCNT9999/sim/../src/DTCNT9999.vhd|G:/github_project/FPGA-EDA/DTCNT9999/sim/../src/tb_DTCNT9999.vhd|
+!s107 G:/github_project/FPGA-EDA/DTCNT9999/sim/../src/tb_DTCNT9999.vhd|G:/github_project/FPGA-EDA/DTCNT9999/sim/../src/DTCNT9999.vhd|G:/github_project/FPGA-EDA/DTCNT9999/sim/../src/DISPLAY.vhd|G:/github_project/FPGA-EDA/DTCNT9999/sim/../src/CTRLS.vhd|G:/github_project/FPGA-EDA/DTCNT9999/sim/../src/CNT10.vhd|
+!i113 1
+Z12 tExplicit 1 CvgOpt 0
+Aart
+R2
+R3
+R4
+R5
+DEx4 work 5 cnt10 0 22 IG9=4<T5fVVijO51>5R1?1
+l13
+L11
+VYI13nJ_0n`:9jdZM8O1K@2
+!s100 <WDXLzkXmf8ekg8b:Bec21
+R8
+32
+R9
+!i10b 1
+R10
+R11
+Z13 !s107 G:/github_project/FPGA-EDA/DTCNT9999/sim/../src/tb_DTCNT9999.vhd|G:/github_project/FPGA-EDA/DTCNT9999/sim/../src/DTCNT9999.vhd|G:/github_project/FPGA-EDA/DTCNT9999/sim/../src/DISPLAY.vhd|G:/github_project/FPGA-EDA/DTCNT9999/sim/../src/CTRLS.vhd|G:/github_project/FPGA-EDA/DTCNT9999/sim/../src/CNT10.vhd|
+!i113 1
+R12
+Ectrls
+Z14 w1717861557
+R2
+R3
+R4
+R5
+R0
+Z15 8G:/github_project/FPGA-EDA/DTCNT9999/sim/../src/CTRLS.vhd
+Z16 FG:/github_project/FPGA-EDA/DTCNT9999/sim/../src/CTRLS.vhd
+l0
+L4
+VnZ<4QhVU3hI_m:`XBANaG3
+!s100 OnWG^N_:GiAM;@DbmVNVn3
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R13
+!i113 1
+R12
+Aart
+R2
+R3
+R4
+R5
+DEx4 work 5 ctrls 0 22 nZ<4QhVU3hI_m:`XBANaG3
+l10
+L8
+V[:62I2SjQHZBLNze?QSA71
+!s100 NY2=;mBdgnI[z;=9mGF:I0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R13
+!i113 1
+R12
+Edisplay
+Z17 w1679396923
+R2
+R3
+R4
+R5
+R0
+Z18 8G:/github_project/FPGA-EDA/DTCNT9999/sim/../src/DISPLAY.vhd
+Z19 FG:/github_project/FPGA-EDA/DTCNT9999/sim/../src/DISPLAY.vhd
+l0
+L4
+V`2g2MzFi60KRbPQEHlMEQ0
+!s100 kXjX_lmSdmGha8O`koYkh3
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R13
+!i113 1
+R12
+Aart
+R2
+R3
+R4
+R5
+DEx4 work 7 display 0 22 `2g2MzFi60KRbPQEHlMEQ0
+l12
+L10
+VegmEcJEkkgR[hYfVWO@RZ0
+!s100 TzJJ;l_7;>`An7>QgW8BW2
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R13
+!i113 1
+R12
+Edtcnt9999
+Z20 w1679396892
+R4
+R5
+R0
+Z21 8G:/github_project/FPGA-EDA/DTCNT9999/sim/../src/DTCNT9999.vhd
+Z22 FG:/github_project/FPGA-EDA/DTCNT9999/sim/../src/DTCNT9999.vhd
+l0
+L4
+VOl3No]gg4m:]N<>oAVaB>3
+!s100 4JE=M^QnD?KlIoLPT87BY0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R13
+!i113 1
+R12
+Aart
+R4
+R5
+DEx4 work 9 dtcnt9999 0 22 Ol3No]gg4m:]N<>oAVaB>3
+l33
+L12
+VlPF4L?fSnI3ccRNgI08ec2
+!s100 cef8Me=@Df^VB`jLf>]d^3
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R13
+!i113 1
+R12
+Etb_dcnt9999
+Z23 w1717859595
+R2
+R3
+R4
+R5
+R0
+Z24 8G:/github_project/FPGA-EDA/DTCNT9999/sim/../src/tb_DTCNT9999.vhd
+Z25 FG:/github_project/FPGA-EDA/DTCNT9999/sim/../src/tb_DTCNT9999.vhd
+l0
+L5
+VW@><]Yla`0P0CK8XFBVTX0
+!s100 Ek]l5USIG2e[jOT:8OM3C1
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R13
+!i113 1
+R12
+Aart
+R2
+R3
+R4
+R5
+DEx4 work 11 tb_dcnt9999 0 22 W@><]Yla`0P0CK8XFBVTX0
+l48
+L11
+VzT?K<Oka<J15I7ZDWzUo[2
+!s100 cj605GO=l5V:U`=jIeKCS1
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R13
+!i113 1
+R12

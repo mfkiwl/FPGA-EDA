@@ -1,0 +1,269 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/github_project/FPGA-EDA/FREQ/sim
+Eclk_div_and_data_reg
+Z1 w1717998429
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8G:/github_project/FPGA-EDA/FREQ/sim/../src/clk_div_and_data_reg.vhd
+Z7 FG:/github_project/FPGA-EDA/FREQ/sim/../src/clk_div_and_data_reg.vhd
+l0
+L6
+V6E4>0IFelTeQIU5AXCM3:3
+!s100 e<zUgBQTmY>13mK`E^MzB2
+Z8 OP;C;10.6c;65
+33
+Z9 !s110 1717999915
+!i10b 1
+Z10 !s108 1717999915.000000
+Z11 !s90 -reportprogress|300|-2008|G:/github_project/FPGA-EDA/FREQ/sim/../src/CNT10.vhd|G:/github_project/FPGA-EDA/FREQ/sim/../src/CTRLS.vhd|G:/github_project/FPGA-EDA/FREQ/sim/../src/DISPLAY.vhd|G:/github_project/FPGA-EDA/FREQ/sim/../src/clk_div_and_data_reg.vhd|G:/github_project/FPGA-EDA/FREQ/sim/../src/freq.vhd|G:/github_project/FPGA-EDA/FREQ/sim/../src/freq_tb.vhd|
+!s107 G:/github_project/FPGA-EDA/FREQ/sim/../src/freq_tb.vhd|G:/github_project/FPGA-EDA/FREQ/sim/../src/freq.vhd|G:/github_project/FPGA-EDA/FREQ/sim/../src/clk_div_and_data_reg.vhd|G:/github_project/FPGA-EDA/FREQ/sim/../src/DISPLAY.vhd|G:/github_project/FPGA-EDA/FREQ/sim/../src/CTRLS.vhd|G:/github_project/FPGA-EDA/FREQ/sim/../src/CNT10.vhd|
+!i113 1
+Z12 o-2008
+Z13 tExplicit 1 CvgOpt 0
+Aart
+R2
+R3
+R4
+R5
+DEx4 work 20 clk_div_and_data_reg 0 22 6E4>0IFelTeQIU5AXCM3:3
+l30
+L18
+VXno;DYGkHA5EA47Fek:SS1
+!s100 NgV;PzV1eKDW1F?nooZHc0
+R8
+33
+R9
+!i10b 1
+R10
+R11
+Z14 !s107 G:/github_project/FPGA-EDA/FREQ/sim/../src/freq_tb.vhd|G:/github_project/FPGA-EDA/FREQ/sim/../src/freq.vhd|G:/github_project/FPGA-EDA/FREQ/sim/../src/clk_div_and_data_reg.vhd|G:/github_project/FPGA-EDA/FREQ/sim/../src/DISPLAY.vhd|G:/github_project/FPGA-EDA/FREQ/sim/../src/CTRLS.vhd|G:/github_project/FPGA-EDA/FREQ/sim/../src/CNT10.vhd|
+!i113 1
+R12
+R13
+Ecnt10
+Z15 w1717949137
+R2
+R3
+R4
+R5
+R0
+Z16 8G:/github_project/FPGA-EDA/FREQ/sim/../src/CNT10.vhd
+Z17 FG:/github_project/FPGA-EDA/FREQ/sim/../src/CNT10.vhd
+l0
+L4
+V?5@gB[@ChWa[cY7k_[f>J0
+!s100 eE;nP1hXV4QK38f[5ZUMQ3
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R14
+!i113 1
+R12
+R13
+Aart
+R2
+R3
+R4
+R5
+DEx4 work 5 cnt10 0 22 ?5@gB[@ChWa[cY7k_[f>J0
+l14
+L12
+VEWOnK?PgVAzaaiHKh;3K10
+!s100 5e]28[7@lkeA^J64WoESm3
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R14
+!i113 1
+R12
+R13
+Ectrls
+Z18 w1717998631
+R2
+R3
+R4
+R5
+R0
+Z19 8G:/github_project/FPGA-EDA/FREQ/sim/../src/CTRLS.vhd
+Z20 FG:/github_project/FPGA-EDA/FREQ/sim/../src/CTRLS.vhd
+l0
+L4
+V5nTY=;a]<YI^54nk:5Mkj2
+!s100 OnWG^N_:GiAM;@DbmVNVn3
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R14
+!i113 1
+R12
+R13
+Aart
+R2
+R3
+R4
+R5
+DEx4 work 5 ctrls 0 22 5nTY=;a]<YI^54nk:5Mkj2
+l10
+L8
+V1aKiWS1?Q@0F`bgg=g<5T2
+!s100 NY2=;mBdgnI[z;=9mGF:I0
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R14
+!i113 1
+R12
+R13
+Edisplay
+Z21 w1717999759
+R2
+R3
+R4
+R5
+R0
+Z22 8G:/github_project/FPGA-EDA/FREQ/sim/../src/DISPLAY.vhd
+Z23 FG:/github_project/FPGA-EDA/FREQ/sim/../src/DISPLAY.vhd
+l0
+L8
+VcS9B_cPhI2UQdaeECK>=62
+!s100 Y6CH1536T;`Shbd97:gBh3
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R14
+!i113 1
+R12
+R13
+Aart
+R2
+R3
+R4
+R5
+DEx4 work 7 display 0 22 cS9B_cPhI2UQdaeECK>=62
+l18
+L14
+VO?GzKJ:R2AdLNEO0Rm5K02
+!s100 cUW8RkdCZR64Z>aoPMS=b0
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R14
+!i113 1
+R12
+R13
+Efreq
+Z24 w1717998521
+R2
+R3
+R4
+R5
+R0
+Z25 8G:/github_project/FPGA-EDA/FREQ/sim/../src/freq.vhd
+Z26 FG:/github_project/FPGA-EDA/FREQ/sim/../src/freq.vhd
+l0
+L5
+VU>]j2LQDNi0o_A_^@n[SW2
+!s100 >S@OecX8Hg_51`5W5RU;m2
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R14
+!i113 1
+R12
+R13
+Aart
+R2
+R3
+R4
+R5
+Z27 DEx4 work 4 freq 0 22 U>]j2LQDNi0o_A_^@n[SW2
+l70
+L19
+Vj`oz09Fl4XgZ0OJlMaOH91
+!s100 zKXOPh5RWX5NND2;AA1zc0
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R14
+!i113 1
+R12
+R13
+Efreq_tb
+Z28 w1717995349
+Z29 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R4
+R5
+R0
+Z30 8G:/github_project/FPGA-EDA/FREQ/sim/../src/freq_tb.vhd
+Z31 FG:/github_project/FPGA-EDA/FREQ/sim/../src/freq_tb.vhd
+l0
+L5
+VV]Rkz]ZW2;=OY;ZK]]hNX0
+!s100 zEi5V?Ub[B4:?X>Tj2kNM2
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R14
+!i113 1
+R12
+R13
+Abench
+R2
+R3
+R27
+R29
+R4
+R5
+DEx4 work 7 freq_tb 0 22 V]Rkz]ZW2;=OY;ZK]]hNX0
+l20
+L8
+VjABJ3[<o6N_kZ4iG]ffCA0
+!s100 i`NU?YmQLU<5b9ZMeW6G_3
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R14
+!i113 1
+R12
+R13

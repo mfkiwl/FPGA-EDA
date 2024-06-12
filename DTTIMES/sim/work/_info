@@ -1,0 +1,337 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/github_project/FPGA-EDA/DTTIMES/sim
+Ecnt10
+Z1 w1717949137
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8G:/github_project/FPGA-EDA/DTTIMES/sim/../src/CNT10.vhd
+Z7 FG:/github_project/FPGA-EDA/DTTIMES/sim/../src/CNT10.vhd
+l0
+L4
+VkHMDzVL[=<kQ^d]mLzod<1
+!s100 eE;nP1hXV4QK38f[5ZUMQ3
+Z8 OP;C;10.6c;65
+32
+Z9 !s110 1718071692
+!i10b 1
+Z10 !s108 1718071692.000000
+Z11 !s90 -reportprogress|300|G:/github_project/FPGA-EDA/DTTIMES/sim/../src/CNT10.vhd|G:/github_project/FPGA-EDA/DTTIMES/sim/../src/CNT6.vhd|G:/github_project/FPGA-EDA/DTTIMES/sim/../src/CNT6_tb.vhd|G:/github_project/FPGA-EDA/DTTIMES/sim/../src/CTRLS.vhd|G:/github_project/FPGA-EDA/DTTIMES/sim/../src/DISPLAY.vhd|G:/github_project/FPGA-EDA/DTTIMES/sim/../src/DTTIMES.vhd|G:/github_project/FPGA-EDA/DTTIMES/sim/../src/DTTIMES_tb.vhd|G:/github_project/FPGA-EDA/DTTIMES/sim/../src/freq_div.vhd|
+!s107 G:/github_project/FPGA-EDA/DTTIMES/sim/../src/freq_div.vhd|G:/github_project/FPGA-EDA/DTTIMES/sim/../src/DTTIMES_tb.vhd|G:/github_project/FPGA-EDA/DTTIMES/sim/../src/DTTIMES.vhd|G:/github_project/FPGA-EDA/DTTIMES/sim/../src/DISPLAY.vhd|G:/github_project/FPGA-EDA/DTTIMES/sim/../src/CTRLS.vhd|G:/github_project/FPGA-EDA/DTTIMES/sim/../src/CNT6_tb.vhd|G:/github_project/FPGA-EDA/DTTIMES/sim/../src/CNT6.vhd|G:/github_project/FPGA-EDA/DTTIMES/sim/../src/CNT10.vhd|
+!i113 1
+Z12 tExplicit 1 CvgOpt 0
+Aart
+R2
+R3
+R4
+R5
+DEx4 work 5 cnt10 0 22 kHMDzVL[=<kQ^d]mLzod<1
+l14
+L12
+V145eA23VJo6QcdCL27NWI3
+!s100 5e]28[7@lkeA^J64WoESm3
+R8
+32
+R9
+!i10b 1
+R10
+R11
+Z13 !s107 G:/github_project/FPGA-EDA/DTTIMES/sim/../src/freq_div.vhd|G:/github_project/FPGA-EDA/DTTIMES/sim/../src/DTTIMES_tb.vhd|G:/github_project/FPGA-EDA/DTTIMES/sim/../src/DTTIMES.vhd|G:/github_project/FPGA-EDA/DTTIMES/sim/../src/DISPLAY.vhd|G:/github_project/FPGA-EDA/DTTIMES/sim/../src/CTRLS.vhd|G:/github_project/FPGA-EDA/DTTIMES/sim/../src/CNT6_tb.vhd|G:/github_project/FPGA-EDA/DTTIMES/sim/../src/CNT6.vhd|G:/github_project/FPGA-EDA/DTTIMES/sim/../src/CNT10.vhd|
+!i113 1
+R12
+Ecnt6
+Z14 w1717924842
+R2
+R3
+R4
+R5
+R0
+Z15 8G:/github_project/FPGA-EDA/DTTIMES/sim/../src/CNT6.vhd
+Z16 FG:/github_project/FPGA-EDA/DTTIMES/sim/../src/CNT6.vhd
+l0
+L6
+VE5i3=L=T<k1z:BiTPX38O1
+!s100 PfzeI9F`m:X6kWzak]NQ?1
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R13
+!i113 1
+R12
+Aart
+R2
+R3
+R4
+R5
+Z17 DEx4 work 4 cnt6 0 22 E5i3=L=T<k1z:BiTPX38O1
+l21
+L19
+VedcoSJFfh@B616lG^][5[0
+!s100 Pk_02]>mO:[b0z[?kgiUP0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R13
+!i113 1
+R12
+Ecnt6_tb
+Z18 w1717925762
+Z19 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R4
+R5
+R0
+Z20 8G:/github_project/FPGA-EDA/DTTIMES/sim/../src/CNT6_tb.vhd
+Z21 FG:/github_project/FPGA-EDA/DTTIMES/sim/../src/CNT6_tb.vhd
+l0
+L5
+V7j`^hGoLKWjR6ziIb_QmJ1
+!s100 6fTDXhMM7?GEb57I0716T1
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R13
+!i113 1
+R12
+Abench
+R2
+R3
+R17
+R19
+R4
+R5
+DEx4 work 7 cnt6_tb 0 22 7j`^hGoLKWjR6ziIb_QmJ1
+l19
+L8
+VKYB3?hIbEj@CkC=ogS^bV3
+!s100 gz79iR73[SVD2@?E?I0?l3
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R13
+!i113 1
+R12
+Ectrls
+Z22 w1717943427
+R2
+R3
+R4
+R5
+R0
+Z23 8G:/github_project/FPGA-EDA/DTTIMES/sim/../src/CTRLS.vhd
+Z24 FG:/github_project/FPGA-EDA/DTTIMES/sim/../src/CTRLS.vhd
+l0
+L4
+VnZ<4QhVU3hI_m:`XBANaG3
+!s100 OnWG^N_:GiAM;@DbmVNVn3
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R13
+!i113 1
+R12
+Aart
+R2
+R3
+R4
+R5
+DEx4 work 5 ctrls 0 22 nZ<4QhVU3hI_m:`XBANaG3
+l10
+L8
+V=gZcG:_VjnXMf8>b@WgPj3
+!s100 ab4h<G0mo0EbGP92@nK601
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R13
+!i113 1
+R12
+Edisplay
+Z25 w1679396923
+R2
+R3
+R4
+R5
+R0
+Z26 8G:/github_project/FPGA-EDA/DTTIMES/sim/../src/DISPLAY.vhd
+Z27 FG:/github_project/FPGA-EDA/DTTIMES/sim/../src/DISPLAY.vhd
+l0
+L4
+V`2g2MzFi60KRbPQEHlMEQ0
+!s100 kXjX_lmSdmGha8O`koYkh3
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R13
+!i113 1
+R12
+Aart
+R2
+R3
+R4
+R5
+DEx4 work 7 display 0 22 `2g2MzFi60KRbPQEHlMEQ0
+l12
+L10
+VegmEcJEkkgR[hYfVWO@RZ0
+!s100 TzJJ;l_7;>`An7>QgW8BW2
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R13
+!i113 1
+R12
+Edttimes
+Z28 w1717946295
+R2
+R3
+R4
+R5
+R0
+Z29 8G:/github_project/FPGA-EDA/DTTIMES/sim/../src/DTTIMES.vhd
+Z30 FG:/github_project/FPGA-EDA/DTTIMES/sim/../src/DTTIMES.vhd
+l0
+L5
+VkO=XSnf>I8UHPgW<@[eIF3
+!s100 lfU@ZTTlWo2j`VEigMRgo0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R13
+!i113 1
+R12
+Aart
+R2
+R3
+R4
+R5
+DEx4 work 7 dttimes 0 22 kO=XSnf>I8UHPgW<@[eIF3
+l77
+L19
+Vj9P<h1AWJ99Oo2GPF7C6o0
+!s100 T`<jcUX7fXhhDgTh:<8Sk2
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R13
+!i113 1
+R12
+Edttimes_tb
+Z31 w1717945998
+R19
+R4
+R5
+R0
+Z32 8G:/github_project/FPGA-EDA/DTTIMES/sim/../src/DTTIMES_tb.vhd
+Z33 FG:/github_project/FPGA-EDA/DTTIMES/sim/../src/DTTIMES_tb.vhd
+l0
+L5
+VKb8W;G=?eYeShjnDXGR013
+!s100 Df@@=9_nzBjRF1fkNa]4o3
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R13
+!i113 1
+R12
+Abench
+R19
+R4
+R5
+DEx4 work 10 dttimes_tb 0 22 Kb8W;G=?eYeShjnDXGR013
+l36
+L8
+VJIXBjbm[TASQUklz=<XmU0
+!s100 ei37`KUKYh[;B:V286:JG0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R13
+!i113 1
+R12
+Efreq_div
+Z34 w1717946562
+R2
+R3
+R4
+R5
+R0
+Z35 8G:/github_project/FPGA-EDA/DTTIMES/sim/../src/freq_div.vhd
+Z36 FG:/github_project/FPGA-EDA/DTTIMES/sim/../src/freq_div.vhd
+l0
+L6
+VY=ePlAM9JgH56lQ8BGnb`2
+!s100 >FfYTA>E=88Fio<_@jbW>1
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R13
+!i113 1
+R12
+Aart
+R2
+R3
+R4
+R5
+DEx4 work 8 freq_div 0 22 Y=ePlAM9JgH56lQ8BGnb`2
+l20
+L16
+V4d?E1=B_l]Zfz?HLWW21P0
+!s100 i6^ZgCR[3[aSM^iHB[bEk2
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R13
+!i113 1
+R12

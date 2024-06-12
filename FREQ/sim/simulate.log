@@ -1,0 +1,1084 @@
+# Reading G:/Modesim_10_6/tcl/vsim/pref.tcl
+# do sim.do
+# ** Error: (vlib-35) Failed to create directory "work".
+# File exists. (errno = EEXIST)
+# Model Technology ModelSim DE-64 vmap 10.6c Lib Mapping Utility 2017.07 Jul 26 2017
+# vmap work ./work 
+# Modifying modelsim.ini
+# Model Technology ModelSim DE-64 vcom 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 14:11:55 on Jun 10,2024
+# vcom -reportprogress 300 -2008 G:/github_project/FPGA-EDA/FREQ/sim/../src/CNT10.vhd G:/github_project/FPGA-EDA/FREQ/sim/../src/CTRLS.vhd G:/github_project/FPGA-EDA/FREQ/sim/../src/DISPLAY.vhd G:/github_project/FPGA-EDA/FREQ/sim/../src/clk_div_and_data_reg.vhd G:/github_project/FPGA-EDA/FREQ/sim/../src/freq.vhd G:/github_project/FPGA-EDA/FREQ/sim/../src/freq_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity CNT10
+# -- Compiling architecture ART of CNT10
+# -- Compiling entity CTRLS
+# -- Compiling architecture ART of CTRLS
+# -- Compiling entity DISPLAY
+# -- Compiling architecture ART of DISPLAY
+# -- Compiling entity clk_div_and_data_reg
+# -- Compiling architecture art of clk_div_and_data_reg
+# -- Compiling entity freq
+# -- Compiling architecture art of freq
+# -- Loading package NUMERIC_STD
+# -- Compiling entity freq_tb
+# -- Compiling architecture bench of freq_tb
+# -- Loading entity freq
+# End time: 14:11:55 on Jun 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# freq_tb
+# vsim -t 1ps -voptargs=""+acc"" freq_tb 
+# Start time: 14:11:55 on Jun 10,2024
+# //  ModelSim DE-64 10.6c Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim DE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.freq_tb(bench)
+# Loading work.freq(art)
+# Loading work.cnt10(art)
+# Loading work.clk_div_and_data_reg(art)
+# Loading work.ctrls(art)
+# Loading work.display(art)
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /freq_tb/freq_inst/u10
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /freq_tb/freq_inst/u10
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 1  Instance: /freq_tb/freq_inst/u1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 1  Instance: /freq_tb/freq_inst/u1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 1  Instance: /freq_tb/freq_inst/u1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 2  Instance: /freq_tb/freq_inst/u2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 2  Instance: /freq_tb/freq_inst/u2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 2  Instance: /freq_tb/freq_inst/u2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 3  Instance: /freq_tb/freq_inst/u3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 3  Instance: /freq_tb/freq_inst/u3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 3  Instance: /freq_tb/freq_inst/u3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 4  Instance: /freq_tb/freq_inst/u4
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 4  Instance: /freq_tb/freq_inst/u4
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 4  Instance: /freq_tb/freq_inst/u4
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 5  Instance: /freq_tb/freq_inst/u5
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 5  Instance: /freq_tb/freq_inst/u5
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 5  Instance: /freq_tb/freq_inst/u5
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 6  Instance: /freq_tb/freq_inst/u6
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 6  Instance: /freq_tb/freq_inst/u6
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 6  Instance: /freq_tb/freq_inst/u6
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 7  Instance: /freq_tb/freq_inst/u7
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 7  Instance: /freq_tb/freq_inst/u7
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 7  Instance: /freq_tb/freq_inst/u7
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 60 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 60 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 60 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 100 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 100 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 100 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 140 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 140 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 140 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 180 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 180 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 180 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 220 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 220 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 220 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 260 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 260 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 260 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 300 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 300 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 300 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 340 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 340 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 340 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 380 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 380 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 380 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 420 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 420 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 420 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 460 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 460 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 460 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 500 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 500 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 500 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 540 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 540 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 540 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 580 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 580 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 580 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 620 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 620 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 620 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 660 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 660 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 660 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 700 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 700 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 700 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 740 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 740 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 740 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 780 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 780 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 780 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 820 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 820 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 820 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 860 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 860 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 860 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 900 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 900 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 900 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 940 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 940 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 940 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 980 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 980 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 980 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1020 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1020 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1020 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1060 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1060 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1060 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1100 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1100 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1100 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1140 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1140 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1140 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1180 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1180 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1180 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1220 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1220 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1220 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1260 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1260 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1260 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1300 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1300 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1300 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1340 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1340 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1340 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1380 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1380 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1380 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1420 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1420 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1420 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1460 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1460 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1460 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1500 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1500 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1500 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1540 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1540 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1540 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1580 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1580 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1580 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1620 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1620 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1620 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1660 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1660 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1660 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1700 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1700 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1700 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1740 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1740 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1740 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1780 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1780 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1780 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1820 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1820 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1820 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1860 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1860 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1860 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1940 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1940 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1940 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1980 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1980 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1980 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2020 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2020 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2020 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2060 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2060 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2060 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2100 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2100 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2100 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2140 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2140 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2140 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2180 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2180 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2180 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2220 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2220 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2220 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2260 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2260 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2260 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2300 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2300 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2300 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2340 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2340 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2340 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2380 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2380 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2380 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2420 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2420 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2420 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2460 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2460 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2460 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2500 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2500 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2500 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2540 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2540 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2540 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2580 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2580 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2580 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2620 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2620 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2620 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2660 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2660 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2660 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2700 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2700 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2700 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2740 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2740 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2740 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2780 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2780 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2780 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2820 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2820 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2820 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2860 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2860 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2860 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2900 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2900 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2900 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2940 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2940 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2940 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2980 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2980 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2980 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3020 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3020 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3020 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3060 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3060 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3060 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3100 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3100 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3100 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3140 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3140 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3140 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3180 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3180 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3180 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3220 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3220 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3220 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3260 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3260 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3260 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3300 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3300 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3300 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3340 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3340 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3340 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3380 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3380 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3380 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3420 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3420 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3420 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3460 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3460 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3460 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3500 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3500 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3500 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3540 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3540 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3540 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3580 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3580 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3580 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3620 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3620 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3620 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3660 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3660 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3660 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3700 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3700 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3700 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3740 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3740 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3740 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3780 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3780 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3780 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3820 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3820 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3820 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3860 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3860 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3860 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3900 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3900 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3900 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3940 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3940 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3940 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3980 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3980 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3980 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4020 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4020 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4020 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4060 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4060 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4060 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4140 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4140 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4140 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4180 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4180 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4180 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4220 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4220 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4220 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4260 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4260 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4260 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4300 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4300 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4300 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4340 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4340 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4340 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4380 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4380 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4380 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4420 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4420 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4420 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4460 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4460 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4460 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4500 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4500 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4500 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4540 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4540 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4540 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4580 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4580 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4580 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4620 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4620 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4620 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4660 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4660 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4660 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4700 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4700 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4700 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4740 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4740 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4740 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4780 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4780 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4780 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4820 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4820 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4820 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4860 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4860 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4860 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4900 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4900 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4900 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4940 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4940 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4940 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4980 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4980 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4980 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5020 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5020 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5020 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5060 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5060 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5060 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5100 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5100 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5100 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5140 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5140 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5140 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5180 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5180 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5180 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5220 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5220 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5220 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5260 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5260 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5260 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5340 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5340 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5340 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5380 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5380 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5380 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5420 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5420 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5420 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5460 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5460 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5460 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5500 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5500 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5500 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5540 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5540 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5540 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5580 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5580 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5580 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5620 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5620 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5620 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5660 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5660 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5660 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5700 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5700 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5700 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5740 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5740 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5740 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5780 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5780 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5780 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5820 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5820 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5820 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5860 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5860 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5860 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5900 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5900 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5900 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5940 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5940 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5940 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5980 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5980 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5980 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6020 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6020 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6020 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6060 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6060 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6060 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6100 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6100 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6100 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6140 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6140 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6140 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6180 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6180 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6180 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6220 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6220 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6220 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6260 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6260 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6260 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6300 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6300 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6300 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6340 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6340 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6340 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6380 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6380 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6380 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6420 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6420 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6420 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6460 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6460 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6460 ns  Iteration: 0  Instance: /freq_tb/freq_inst/u0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6480 ns  Iteration: 1  Instance: /freq_tb/freq_inst/u10
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 6480 ns  Iteration: 1  Instance: /freq_tb/freq_inst/u10
