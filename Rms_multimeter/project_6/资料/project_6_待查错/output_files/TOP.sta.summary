@@ -1,0 +1,221 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'fenpin:u0|new_clk_8K'
+Slack : -129.255
+TNS   : -5552.552
+
+Type  : Slow 1200mV 85C Model Setup 'key[0]'
+Slack : -43.519
+TNS   : -947.727
+
+Type  : Slow 1200mV 85C Model Setup 'AD0809:u3|rom_data_clk'
+Slack : -10.628
+TNS   : -389.643
+
+Type  : Slow 1200mV 85C Model Setup 'fenpin:u0|new_clk_80k'
+Slack : -9.593
+TNS   : -476.835
+
+Type  : Slow 1200mV 85C Model Setup 'clk24M'
+Slack : -1.897
+TNS   : -43.610
+
+Type  : Slow 1200mV 85C Model Setup 'AD0809:u1|rom_data_clk'
+Slack : -1.860
+TNS   : -14.281
+
+Type  : Slow 1200mV 85C Model Hold 'key[0]'
+Slack : -1.113
+TNS   : -11.892
+
+Type  : Slow 1200mV 85C Model Hold 'fenpin:u0|new_clk_8K'
+Slack : 0.163
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'AD0809:u1|rom_data_clk'
+Slack : 0.438
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'fenpin:u0|new_clk_80k'
+Slack : 0.449
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk24M'
+Slack : 0.485
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'AD0809:u3|rom_data_clk'
+Slack : 0.504
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fenpin:u0|new_clk_8K'
+Slack : -4.000
+TNS   : -358.426
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'AD0809:u1|rom_data_clk'
+Slack : -3.201
+TNS   : -15.097
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk24M'
+Slack : -3.000
+TNS   : -40.175
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'key[0]'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fenpin:u0|new_clk_80k'
+Slack : -1.487
+TNS   : -144.239
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'AD0809:u3|rom_data_clk'
+Slack : -1.487
+TNS   : -102.603
+
+Type  : Slow 1200mV 0C Model Setup 'fenpin:u0|new_clk_8K'
+Slack : -117.596
+TNS   : -5062.435
+
+Type  : Slow 1200mV 0C Model Setup 'key[0]'
+Slack : -39.348
+TNS   : -859.289
+
+Type  : Slow 1200mV 0C Model Setup 'AD0809:u3|rom_data_clk'
+Slack : -9.710
+TNS   : -354.666
+
+Type  : Slow 1200mV 0C Model Setup 'fenpin:u0|new_clk_80k'
+Slack : -8.703
+TNS   : -432.255
+
+Type  : Slow 1200mV 0C Model Setup 'clk24M'
+Slack : -1.681
+TNS   : -38.746
+
+Type  : Slow 1200mV 0C Model Setup 'AD0809:u1|rom_data_clk'
+Slack : -1.650
+TNS   : -12.597
+
+Type  : Slow 1200mV 0C Model Hold 'key[0]'
+Slack : -1.002
+TNS   : -10.435
+
+Type  : Slow 1200mV 0C Model Hold 'fenpin:u0|new_clk_8K'
+Slack : 0.145
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'fenpin:u0|new_clk_80k'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'AD0809:u1|rom_data_clk'
+Slack : 0.412
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk24M'
+Slack : 0.430
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'AD0809:u3|rom_data_clk'
+Slack : 0.464
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fenpin:u0|new_clk_8K'
+Slack : -4.000
+TNS   : -358.426
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'AD0809:u1|rom_data_clk'
+Slack : -3.201
+TNS   : -15.097
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk24M'
+Slack : -3.000
+TNS   : -40.175
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'key[0]'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fenpin:u0|new_clk_80k'
+Slack : -1.487
+TNS   : -144.239
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'AD0809:u3|rom_data_clk'
+Slack : -1.487
+TNS   : -102.603
+
+Type  : Fast 1200mV 0C Model Setup 'fenpin:u0|new_clk_8K'
+Slack : -55.032
+TNS   : -2238.963
+
+Type  : Fast 1200mV 0C Model Setup 'key[0]'
+Slack : -17.732
+TNS   : -382.997
+
+Type  : Fast 1200mV 0C Model Setup 'AD0809:u3|rom_data_clk'
+Slack : -4.110
+TNS   : -129.120
+
+Type  : Fast 1200mV 0C Model Setup 'fenpin:u0|new_clk_80k'
+Slack : -3.614
+TNS   : -149.700
+
+Type  : Fast 1200mV 0C Model Setup 'clk24M'
+Slack : -0.209
+TNS   : -3.872
+
+Type  : Fast 1200mV 0C Model Setup 'AD0809:u1|rom_data_clk'
+Slack : -0.190
+TNS   : -0.976
+
+Type  : Fast 1200mV 0C Model Hold 'key[0]'
+Slack : -0.610
+TNS   : -7.576
+
+Type  : Fast 1200mV 0C Model Hold 'fenpin:u0|new_clk_8K'
+Slack : 0.030
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'AD0809:u1|rom_data_clk'
+Slack : 0.148
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'fenpin:u0|new_clk_80k'
+Slack : 0.184
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk24M'
+Slack : 0.201
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'AD0809:u3|rom_data_clk'
+Slack : 0.202
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk24M'
+Slack : -3.000
+TNS   : -30.416
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'key[0]'
+Slack : -3.000
+TNS   : -3.036
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fenpin:u0|new_clk_8K'
+Slack : -1.000
+TNS   : -214.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fenpin:u0|new_clk_80k'
+Slack : -1.000
+TNS   : -97.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'AD0809:u3|rom_data_clk'
+Slack : -1.000
+TNS   : -69.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'AD0809:u1|rom_data_clk'
+Slack : -1.000
+TNS   : -9.000
+
+------------------------------------------------------------

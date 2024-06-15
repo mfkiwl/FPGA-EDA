@@ -1,0 +1,71 @@
+library ieee;
+use ieee.std_logic_1164.all;
+entity LED_XS is
+  generic(effective_level:std_logic :='0');
+  --generic declaration statement
+  port(sec_en ,min_en,hour_en,day_en,
+       mon_en,year_en,week_en:in std_logic;
+       led1: out std_logic;
+       led2: out std_logic;
+       led3: out std_logic;
+       led4: out std_logic;
+       led5: out std_logic;
+       led6: out std_logic;
+       led7: out std_logic;
+       led8: out std_logic);
+end entity LED_XS;
+architecture art of LED_XS is
+  begin
+  process(sec_en ,min_en,hour_en,day_en,mon_en,year_en,week_en) is
+  begin
+    if(sec_en = '0') then
+      led1<=effective_level;
+    else led1<=not effective_level;
+    end if;
+
+    if(min_en = '0') then
+      led2<=effective_level;
+    else led2<=not effective_level;
+    end if;
+
+    if(hour_en = '0') then
+      led3<=effective_level;
+    else led3<=not effective_level;
+    end if;
+
+    if(day_en = '0') then
+      led4<=effective_level;
+    else led4<=not effective_level;
+    end if;
+
+    if(mon_en = '0') then
+      led5<=effective_level;
+    else led5<=not effective_level;
+    end if;
+
+    if(year_en = '0') then
+      led6<=effective_level;
+    else led6<=not effective_level;
+    end if;
+
+    if(week_en = '0') then
+      led7<=effective_level;
+    else led7<=not effective_level;
+    end if;
+      
+    led8<=not effective_level;
+
+    end process;
+end architecture;
+
+
+
+
+
+
+
+
+
+
+
+

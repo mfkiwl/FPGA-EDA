@@ -1,0 +1,871 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\quartus\EDA_PROJECT\project_6\simulation\qsim
+Ead0809
+Z1 w1685595894
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dE:\quartus\EDA_PROJECT\project_6\simulation\qsim
+Z5 8E:/quartus/EDA_PROJECT/project_6/AD0809.vhd
+Z6 FE:/quartus/EDA_PROJECT/project_6/AD0809.vhd
+l0
+L3
+Vnh5]WlXfz>5D9>Chao=5d3
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1685595921.325000
+Z9 !s90 -reportprogress|300|-93|-work|work|E:/quartus/EDA_PROJECT/project_6/AD0809.vhd|
+Z10 !s107 E:/quartus/EDA_PROJECT/project_6/AD0809.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 6M1^K?[En]:?8_X?h_c:G0
+!i10b 1
+Aart
+R2
+R3
+DEx4 work 6 ad0809 0 22 nh5]WlXfz>5D9>Chao=5d3
+l12
+L10
+V@c15Hz4fCL:O>;mPoX1eE3
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 9;<]?B3FRY0REEVkG>NiA2
+!i10b 1
+Ecos
+Z13 w1684377520
+Z14 DPx9 altera_mf 20 altera_mf_components 0 22 zh;bE09gCIPDVLK?MN49L3
+R2
+R3
+R4
+Z15 8E:/quartus/EDA_PROJECT/project_6/cos.vhd
+Z16 FE:/quartus/EDA_PROJECT/project_6/cos.vhd
+l0
+L42
+VKoz<CnQDko5Xk::HKBL`[0
+R7
+31
+Z17 !s108 1685595921.563000
+Z18 !s90 -reportprogress|300|-93|-work|work|E:/quartus/EDA_PROJECT/project_6/cos.vhd|
+Z19 !s107 E:/quartus/EDA_PROJECT/project_6/cos.vhd|
+R11
+R12
+!s100 h_OE=iL4hRJR[NV52?jTb0
+!i10b 1
+Asyn
+R14
+R2
+R3
+DEx4 work 3 cos 0 22 Koz<CnQDko5Xk::HKBL`[0
+l56
+L52
+VX9OmT<^k07lCS0ZK_bEJF1
+R7
+31
+R17
+R18
+R19
+R11
+R12
+!s100 i[60SjE[;08BJoIQ9SgGM0
+!i10b 1
+Edata_change
+Z20 w1685432982
+Z21 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z22 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+R2
+R3
+R4
+Z23 8E:/quartus/EDA_PROJECT/project_6/data_change.vhd
+Z24 FE:/quartus/EDA_PROJECT/project_6/data_change.vhd
+l0
+L5
+V9mci[4A8iZh;0W@Lj1SS;2
+R7
+31
+Z25 !s108 1685595920.285000
+Z26 !s90 -reportprogress|300|-93|-work|work|E:/quartus/EDA_PROJECT/project_6/data_change.vhd|
+Z27 !s107 E:/quartus/EDA_PROJECT/project_6/data_change.vhd|
+R11
+R12
+!s100 YFQ?cYmLM[aY5^9:GSgQW1
+!i10b 1
+Aart
+R21
+R22
+R2
+R3
+DEx4 work 11 data_change 0 22 9mci[4A8iZh;0W@Lj1SS;2
+l13
+L12
+VH0e0DJ@E[h01OPDQmAcQM1
+R7
+31
+R25
+R26
+R27
+R11
+R12
+!s100 ;hQ@?TZP]_C=kj`M8RK4X3
+!i10b 1
+Edisplay
+Z28 w1684243119
+R21
+R22
+R2
+R3
+R4
+Z29 8E:/quartus/EDA_PROJECT/project_6/display.vhd
+Z30 FE:/quartus/EDA_PROJECT/project_6/display.vhd
+l0
+L5
+VNCS;::8hjI_g3P2lmnA]@1
+R7
+31
+Z31 !s108 1685595920.208000
+Z32 !s90 -reportprogress|300|-93|-work|work|E:/quartus/EDA_PROJECT/project_6/display.vhd|
+Z33 !s107 E:/quartus/EDA_PROJECT/project_6/display.vhd|
+R11
+R12
+!s100 =Id<H^g?L4OFoK87cQhHd2
+!i10b 1
+Aart
+R21
+R22
+R2
+R3
+DEx4 work 7 display 0 22 NCS;::8hjI_g3P2lmnA]@1
+l14
+L12
+V;?=FFHg=4z`k<hJCW:U1?1
+R7
+31
+R31
+R32
+R33
+R11
+R12
+!s100 =0cghaIG3zYARe6ZCU8:D0
+!i10b 1
+Efenpin
+Z34 w1685591242
+R22
+R21
+R2
+R3
+R4
+Z35 8E:/quartus/EDA_PROJECT/project_6/fenpin.vhd
+Z36 FE:/quartus/EDA_PROJECT/project_6/fenpin.vhd
+l0
+L4
+V>gXVZzF?MCRUFk]95;]eQ3
+R7
+31
+Z37 !s108 1685595921.246000
+Z38 !s90 -reportprogress|300|-93|-work|work|E:/quartus/EDA_PROJECT/project_6/fenpin.vhd|
+Z39 !s107 E:/quartus/EDA_PROJECT/project_6/fenpin.vhd|
+R11
+R12
+!s100 gK=YmR_9MRPgegl[V6Jl;0
+!i10b 1
+Aart
+R22
+R21
+R2
+R3
+DEx4 work 6 fenpin 0 22 >gXVZzF?MCRUFk]95;]eQ3
+l13
+L12
+V3N<nSok8Dl16DaEBh@SXD0
+R7
+31
+R37
+R38
+R39
+R11
+R12
+!s100 6?Ajn=d0m`Bj4;?K4R3IX0
+!i10b 1
+Egenhao
+Z40 w1685594780
+Z41 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R21
+R22
+R2
+R3
+R4
+Z42 8E:/quartus/EDA_PROJECT/project_6/genhao.vhd
+Z43 FE:/quartus/EDA_PROJECT/project_6/genhao.vhd
+l0
+L6
+V`<Co?8MNQ]0Vld7^?j6>@3
+R7
+31
+Z44 !s108 1685595920.684000
+Z45 !s90 -reportprogress|300|-93|-work|work|E:/quartus/EDA_PROJECT/project_6/genhao.vhd|
+Z46 !s107 E:/quartus/EDA_PROJECT/project_6/genhao.vhd|
+R11
+R12
+!s100 2_5Ig_N<fbeIUWlYb:gV=1
+!i10b 1
+Aart
+R41
+R21
+R22
+R2
+R3
+DEx4 work 6 genhao 0 22 `<Co?8MNQ]0Vld7^?j6>@3
+l19
+L16
+VbKDDRAAGF2]<5;BLIODCo1
+R7
+31
+R44
+R45
+R46
+R11
+R12
+!s100 Anc3]U0F68Nzz1E1KG];R2
+!i10b 1
+Egonglvyinsu
+Z47 w1685594793
+Z48 DPx3 lpm 14 lpm_components 0 22 Wog`[CL=7N916SZzK3:hL2
+R22
+R21
+R41
+R2
+R3
+R4
+Z49 8E:/quartus/EDA_PROJECT/project_6/gonglvyinsu.vhd
+Z50 FE:/quartus/EDA_PROJECT/project_6/gonglvyinsu.vhd
+l0
+L8
+VzeF;3?[hIfM?C=d8zJH>m1
+R7
+31
+Z51 !s108 1685595921.164000
+Z52 !s90 -reportprogress|300|-93|-work|work|E:/quartus/EDA_PROJECT/project_6/gonglvyinsu.vhd|
+Z53 !s107 E:/quartus/EDA_PROJECT/project_6/gonglvyinsu.vhd|
+R11
+R12
+!s100 =f?PBIKLRP]<L?@zOE<YK0
+!i10b 1
+Aart
+R48
+R22
+R21
+R41
+R2
+R3
+DEx4 work 11 gonglvyinsu 0 22 zeF;3?[hIfM?C=d8zJH>m1
+l20
+L16
+VPcf8H=FKEUD<[JcY:YOSG3
+R7
+31
+R51
+R52
+R53
+R11
+R12
+!s100 4b5SczkUzIh?1:IEEM4312
+!i10b 1
+Eqiuhe
+Z54 w1685594830
+R41
+R21
+R22
+R2
+R3
+R4
+Z55 8E:/quartus/EDA_PROJECT/project_6/qiuhe.vhd
+Z56 FE:/quartus/EDA_PROJECT/project_6/qiuhe.vhd
+l0
+L6
+V25IlR54V[W_k0C>4[LhGB0
+R7
+31
+Z57 !s108 1685595920.605000
+Z58 !s90 -reportprogress|300|-93|-work|work|E:/quartus/EDA_PROJECT/project_6/qiuhe.vhd|
+Z59 !s107 E:/quartus/EDA_PROJECT/project_6/qiuhe.vhd|
+R11
+R12
+!s100 KlAEN0;81_zgE6V=@WFbR1
+!i10b 1
+Aart
+R41
+R21
+R22
+R2
+R3
+DEx4 work 5 qiuhe 0 22 25IlR54V[W_k0C>4[LhGB0
+l13
+L12
+VRmKad@F48InNI9hZ=H03^3
+R7
+31
+R57
+R58
+R59
+R11
+R12
+!s100 J^:nYi4cJ3S<OBh=oDWXR1
+!i10b 1
+Eqiuhe_gong
+Z60 w1685594818
+R41
+R21
+R22
+R2
+R3
+R4
+Z61 8E:/quartus/EDA_PROJECT/project_6/qiuhe_gong.vhd
+Z62 FE:/quartus/EDA_PROJECT/project_6/qiuhe_gong.vhd
+l0
+L9
+V>0;iP_E:46E:CzLM^WZRd3
+R7
+31
+Z63 !s108 1685595920.449000
+Z64 !s90 -reportprogress|300|-93|-work|work|E:/quartus/EDA_PROJECT/project_6/qiuhe_gong.vhd|
+Z65 !s107 E:/quartus/EDA_PROJECT/project_6/qiuhe_gong.vhd|
+R11
+R12
+!s100 <SlS?l4k2nK5Ciei@j=_c3
+!i10b 1
+Aart
+R41
+R21
+R22
+R2
+R3
+DEx4 work 10 qiuhe_gong 0 22 >0;iP_E:46E:CzLM^WZRd3
+l17
+L16
+VSeb:J9Am7MjE`TiY9kzBY0
+R7
+31
+R63
+R64
+R65
+R11
+R12
+!s100 ]ZFzFkUGELXa=c8BnE6RU0
+!i10b 1
+Equling
+Z66 w1683892594
+R22
+R21
+R2
+R3
+R4
+Z67 8E:/quartus/EDA_PROJECT/project_6/quling.vhd
+Z68 FE:/quartus/EDA_PROJECT/project_6/quling.vhd
+l0
+L5
+V8`AMABZcGIJDYJB4OgGoJ2
+R7
+31
+Z69 !s108 1685595920.132000
+Z70 !s90 -reportprogress|300|-93|-work|work|E:/quartus/EDA_PROJECT/project_6/quling.vhd|
+Z71 !s107 E:/quartus/EDA_PROJECT/project_6/quling.vhd|
+R11
+R12
+!s100 1CO59^nkbG[_Bd^1m[EOd1
+!i10b 1
+Aart
+R22
+R21
+R2
+R3
+DEx4 work 6 quling 0 22 8`AMABZcGIJDYJB4OgGoJ2
+l10
+L9
+Vl`4DzmTROS;ILP5>P^Ek23
+R7
+31
+R69
+R70
+R71
+R11
+R12
+!s100 ]PgIT53eCaZg0>@MGl1iZ3
+!i10b 1
+Equzhiliu
+Z72 w1683776523
+R21
+R22
+R2
+R3
+R4
+Z73 8E:/quartus/EDA_PROJECT/project_6/quzhiliu.vhd
+Z74 FE:/quartus/EDA_PROJECT/project_6/quzhiliu.vhd
+l0
+L5
+V8J>7SO;6DYRY<0b>?ol^H0
+R7
+31
+Z75 !s108 1685595920.527000
+Z76 !s90 -reportprogress|300|-93|-work|work|E:/quartus/EDA_PROJECT/project_6/quzhiliu.vhd|
+Z77 !s107 E:/quartus/EDA_PROJECT/project_6/quzhiliu.vhd|
+R11
+R12
+!s100 6]oeCUb=:S4MaR@i8f?SI1
+!i10b 1
+Aart
+R21
+R22
+R2
+R3
+DEx4 work 8 quzhiliu 0 22 8J>7SO;6DYRY<0b>?ol^H0
+l10
+L9
+V2AA0^H5C[BQo>k]QT1Q;z3
+R7
+31
+R75
+R76
+R77
+R11
+R12
+!s100 ==HjEznXSn7[Bm^e]_Q^=1
+!i10b 1
+Erom
+Z78 w1685595280
+R22
+R21
+R2
+R3
+R4
+Z79 8E:/quartus/EDA_PROJECT/project_6/ROM.vhd
+Z80 FE:/quartus/EDA_PROJECT/project_6/ROM.vhd
+l0
+L4
+VNZ`J7gn3zh?`Q5j4AGHc@0
+R7
+31
+Z81 !s108 1685595921.644000
+Z82 !s90 -reportprogress|300|-93|-work|work|E:/quartus/EDA_PROJECT/project_6/ROM.vhd|
+Z83 !s107 E:/quartus/EDA_PROJECT/project_6/ROM.vhd|
+R11
+R12
+!s100 z@XgQ@Sc1?iW@>^_M6FW22
+!i10b 1
+Aart
+R22
+R21
+R2
+R3
+DEx4 work 3 rom 0 22 NZ`J7gn3zh?`Q5j4AGHc@0
+l29
+L9
+V?mS??7JiPY4ZoZ@M^Qj7Z0
+R7
+31
+R81
+R82
+R83
+R11
+R12
+!s100 ^U2`3;N@ngS43nbeD8P6e3
+!i10b 1
+Eshizaigonglv
+Z84 w1684228440
+R41
+R48
+R22
+R21
+R2
+R3
+R4
+Z85 8E:/quartus/EDA_PROJECT/project_6/shizaigonglv.vhd
+Z86 FE:/quartus/EDA_PROJECT/project_6/shizaigonglv.vhd
+l0
+L8
+VECTQRRmFzNcFCNT_khNoh2
+R7
+31
+Z87 !s108 1685595920.367000
+Z88 !s90 -reportprogress|300|-93|-work|work|E:/quartus/EDA_PROJECT/project_6/shizaigonglv.vhd|
+Z89 !s107 E:/quartus/EDA_PROJECT/project_6/shizaigonglv.vhd|
+R11
+R12
+!s100 ghDT@fjgD5Q;Hnco0Y=5_0
+!i10b 1
+Aart
+R41
+R48
+R22
+R21
+R2
+R3
+DEx4 work 12 shizaigonglv 0 22 ECTQRRmFzNcFCNT_khNoh2
+l18
+L16
+V_]jl;UeY5kM;d2kUBPNL`0
+R7
+31
+R87
+R88
+R89
+R11
+R12
+!s100 i<oVBJ?]klnDU]QLfoL8e2
+!i10b 1
+Esin
+Z90 w1684377471
+R14
+R2
+R3
+R4
+Z91 8E:/quartus/EDA_PROJECT/project_6/sin.vhd
+Z92 FE:/quartus/EDA_PROJECT/project_6/sin.vhd
+l0
+L42
+VTFUEBM=bADBmLH7:mlRMA0
+R7
+31
+Z93 !s108 1685595921.480000
+Z94 !s90 -reportprogress|300|-93|-work|work|E:/quartus/EDA_PROJECT/project_6/sin.vhd|
+Z95 !s107 E:/quartus/EDA_PROJECT/project_6/sin.vhd|
+R11
+R12
+!s100 NUMD_QAbG?:?JTAdT3XU52
+!i10b 1
+Asyn
+R14
+R2
+R3
+DEx4 work 3 sin 0 22 TFUEBM=bADBmLH7:mlRMA0
+l56
+L52
+Vd[1dzjW1aae@<_TJ79jUF1
+R7
+31
+R93
+R94
+R95
+R11
+R12
+!s100 DF:o1B;SXkICmMAOafg2@2
+!i10b 1
+Etop
+Z96 w1685594157
+R22
+R21
+R2
+R3
+R4
+Z97 8E:/quartus/EDA_PROJECT/project_6/TOP.vhd
+Z98 FE:/quartus/EDA_PROJECT/project_6/TOP.vhd
+l0
+L4
+VLWoP]zXGcFW2VS8`2nJ:L3
+R7
+31
+Z99 !s108 1685595921.401000
+Z100 !s90 -reportprogress|300|-93|-work|work|E:/quartus/EDA_PROJECT/project_6/TOP.vhd|
+Z101 !s107 E:/quartus/EDA_PROJECT/project_6/TOP.vhd|
+R11
+R12
+!s100 e<dciDibm^JI8]NGAkmY03
+!i10b 1
+Aart
+R22
+R21
+R2
+R3
+DEx4 work 3 top 0 22 LWoP]zXGcFW2VS8`2nJ:L3
+l118
+L14
+V8kN7`dhRA`2:Qcc@eze_g1
+R7
+31
+R99
+R100
+R101
+R11
+R12
+!s100 WR<GP8W0gV0Kn2^lIl8450
+!i10b 1
+Etop_vhd_tst
+Z102 w1685592500
+R2
+R3
+R4
+Z103 8E:/quartus/EDA_PROJECT/project_6/simulation/qsim/TOP.vht
+Z104 FE:/quartus/EDA_PROJECT/project_6/simulation/qsim/TOP.vht
+l0
+L9
+V]Ano6f[_G[L:R5zM^embD0
+!s100 4GM`VJQIJ;4:d0YKUo1Xo2
+R7
+31
+!i10b 1
+Z105 !s108 1685595921.723000
+Z106 !s90 -reportprogress|300|-93|-work|work|E:/quartus/EDA_PROJECT/project_6/simulation/qsim/TOP.vht|
+Z107 !s107 E:/quartus/EDA_PROJECT/project_6/simulation/qsim/TOP.vht|
+R11
+R12
+Atop_arch
+R2
+R3
+DEx4 work 11 top_vhd_tst 0 22 ]Ano6f[_G[L:R5zM^embD0
+l41
+L11
+VS_JPNIQzkjXU?g@FhAXEX1
+!s100 P6aNMCzJEd16hdPG`VHZm3
+R7
+31
+!i10b 1
+R105
+R106
+R107
+R11
+R12
+Ewugong
+Z108 w1685594862
+R48
+R41
+R21
+R22
+R2
+R3
+R4
+Z109 8E:/quartus/EDA_PROJECT/project_6/wugong.vhd
+Z110 FE:/quartus/EDA_PROJECT/project_6/wugong.vhd
+l0
+L10
+V@SgQz_A@6CJ<fKd8A;3?Q0
+R7
+31
+Z111 !s108 1685595921.079000
+Z112 !s90 -reportprogress|300|-93|-work|work|E:/quartus/EDA_PROJECT/project_6/wugong.vhd|
+Z113 !s107 E:/quartus/EDA_PROJECT/project_6/wugong.vhd|
+R11
+R12
+!s100 C@UUNGX`NiLfnF[6oNon<1
+!i10b 1
+Aart
+R48
+R41
+R21
+R22
+R2
+R3
+DEx4 work 6 wugong 0 22 @SgQz_A@6CJ<fKd8A;3?Q0
+l23
+L19
+V=c=fce5LaSl0URh3fYFDQ1
+R7
+31
+R111
+R112
+R113
+R11
+R12
+!s100 <j5VP_WCDbF23i=V>fkc43
+!i10b 1
+Exskz
+Z114 w1684210286
+R48
+R22
+R21
+R2
+R3
+R4
+Z115 8E:/quartus/EDA_PROJECT/project_6/XSKZ.vhd
+Z116 FE:/quartus/EDA_PROJECT/project_6/XSKZ.vhd
+l0
+L6
+VgidMhn4RY]k]bLN:@IK>[1
+R7
+31
+Z117 !s108 1685595921.000000
+Z118 !s90 -reportprogress|300|-93|-work|work|E:/quartus/EDA_PROJECT/project_6/XSKZ.vhd|
+Z119 !s107 E:/quartus/EDA_PROJECT/project_6/XSKZ.vhd|
+R11
+R12
+!s100 EmR3fG>QeJDhzkG47gm:G1
+!i10b 1
+Aart
+R48
+R22
+R21
+R2
+R3
+DEx4 work 4 xskz 0 22 gidMhn4RY]k]bLN:@IK>[1
+l73
+L15
+V6<ej<?8nd[Y59?8:[5Wa[3
+R7
+31
+R117
+R118
+R119
+R11
+R12
+!s100 m84odYfMVHIc8;R0EA4gM1
+!i10b 1
+Exuanze
+Z120 w1684210039
+R21
+R22
+R2
+R3
+R4
+Z121 8E:/quartus/EDA_PROJECT/project_6/xuanze.vhd
+Z122 FE:/quartus/EDA_PROJECT/project_6/xuanze.vhd
+l0
+L5
+VddmcU=Zn6NX:?hOP?n_0X1
+R7
+31
+Z123 !s108 1685595920.923000
+Z124 !s90 -reportprogress|300|-93|-work|work|E:/quartus/EDA_PROJECT/project_6/xuanze.vhd|
+Z125 !s107 E:/quartus/EDA_PROJECT/project_6/xuanze.vhd|
+R11
+R12
+!s100 f;=Nz>iAmjVJZ3KVF5^[`1
+!i10b 1
+Aart
+R21
+R22
+R2
+R3
+DEx4 work 6 xuanze 0 22 ddmcU=Zn6NX:?hOP?n_0X1
+l15
+L14
+Vb923Z28f_FlB[XCU2L4l83
+R7
+31
+R123
+R124
+R125
+R11
+R12
+!s100 SZNS[HbVlbWn3nIlSh2ke1
+!i10b 1
+Eymq58
+Z126 w1684399210
+R2
+R3
+R4
+Z127 8E:/quartus/EDA_PROJECT/project_6/YMQ58.vhd
+Z128 FE:/quartus/EDA_PROJECT/project_6/YMQ58.vhd
+l0
+L3
+VS3Odhl?RFm8?KmbOGW6b<0
+R7
+31
+Z129 !s108 1685595920.055000
+Z130 !s90 -reportprogress|300|-93|-work|work|E:/quartus/EDA_PROJECT/project_6/YMQ58.vhd|
+Z131 !s107 E:/quartus/EDA_PROJECT/project_6/YMQ58.vhd|
+R11
+R12
+!s100 ?>18GJX7P6bGDO?joSXGM1
+!i10b 1
+Aart
+R2
+R3
+DEx4 work 5 ymq58 0 22 S3Odhl?RFm8?KmbOGW6b<0
+l8
+L7
+VJI;M<<Z?3:FBIKF5`O^TE2
+R7
+31
+R129
+R130
+R131
+R11
+R12
+!s100 =k8`U4lf;WRH8?Md@Knda0
+!i10b 1
+Eyougong
+Z132 w1685348604
+R48
+R22
+R21
+R2
+R3
+R4
+Z133 8E:/quartus/EDA_PROJECT/project_6/yougong.vhd
+Z134 FE:/quartus/EDA_PROJECT/project_6/yougong.vhd
+l0
+L9
+V[Vn@06HULcNi>lJ;5nBYV2
+R7
+31
+Z135 !s108 1685595920.843000
+Z136 !s90 -reportprogress|300|-93|-work|work|E:/quartus/EDA_PROJECT/project_6/yougong.vhd|
+Z137 !s107 E:/quartus/EDA_PROJECT/project_6/yougong.vhd|
+R11
+R12
+!s100 [6:7[WQ@6IK<fmCLSnM;J3
+!i10b 1
+Aart
+R48
+R22
+R21
+R2
+R3
+DEx4 work 7 yougong 0 22 [Vn@06HULcNi>lJ;5nBYV2
+l36
+L16
+VoU[@EBIl6>TfiT>M`?1nW3
+R7
+31
+R135
+R136
+R137
+R11
+R12
+!s100 Ln=<Ga61R`?S6EDnfSVKM3
+!i10b 1
+Eyouxiaozhi
+Z138 w1685414589
+R48
+R22
+R21
+R2
+R3
+R4
+Z139 8E:/quartus/EDA_PROJECT/project_6/youxiaozhi.vhd
+Z140 FE:/quartus/EDA_PROJECT/project_6/youxiaozhi.vhd
+l0
+L10
+VA_ok=z:3D@U_OcMDAdgEW3
+R7
+31
+Z141 !s108 1685595920.764000
+Z142 !s90 -reportprogress|300|-93|-work|work|E:/quartus/EDA_PROJECT/project_6/youxiaozhi.vhd|
+Z143 !s107 E:/quartus/EDA_PROJECT/project_6/youxiaozhi.vhd|
+R11
+R12
+!s100 @N<bcbZYmMoK6W9Edl7[>2
+!i10b 1
+Aart
+R48
+R22
+R21
+R2
+R3
+DEx4 work 10 youxiaozhi 0 22 A_ok=z:3D@U_OcMDAdgEW3
+l46
+L16
+VLY3_V7I;a4n9ZlYB@WVn=2
+R7
+31
+R141
+R142
+R143
+R11
+R12
+!s100 4^Pi;15jDXSAF2S2GGj9>2
+!i10b 1

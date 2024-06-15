@@ -1,0 +1,57 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all; 
+use ieee.std_logic_unsigned.all;
+library lpm;
+use lpm.lpm_components.all;
+
+entity gonglvyinsu is 
+  port(clk:in std_logic;
+       shizai:in std_logic_vector(17 downto 0);--17
+       yougong:in std_logic_vector(17 downto 0);--17
+       s_result_1000_25:buffer std_logic_vector(24 downto 0);
+       gonglvyinsu:out std_logic_vector(17 downto 0));
+end gonglvyinsu;
+architecture art of gonglvyinsu is
+  -- signal s_result_1000_25:std_logic_vector(24 downto 0);
+  signal s_remain25:std_logic_vector(25 downto 0);
+  signal s_gonglvyinsu18:std_logic_vector(17 downto 0);
+  begin 
+    --multiply by 100
+    chengfa100 : lpm_mult
+    generic map (
+      lpm_hint => "MAXIMIZE_SPEED=5",
+      lpm_representation => "UNSIGNED",
+      lpm_type => "LPM_MULT",
+      lpm_widtha => 18,
+      lpm_widthb => 7,
+      lpm_widthp => 25
+    )
+    port map (
+      dataa => yougong,
+      datab => "1100100",--100
+      result => s_result_1000_25
+    );
+
+  xiangchu : LPM_DIVIDE
+  generic map (
+    lpm_drepresentation => "UNSIGNED",
+    lpm_hint => "LPM_REMAINDERPOSITIVE=TRUE",
+    lpm_nrepresentation => "UNSIGNED",
+    lpm_type => "LPM_DIVIDE",
+    lpm_widthd => 25,
+    lpm_widthn => 18
+  )
+  port map (
+    denom => s_result_1000_25,-
+    numer => shizai,
+    quotient => s_gonglvyinsu18,
+    remain => s_remain25
+  );
+  process(clk)
+  begin
+  if clk'event and clk='1' then 
+  gonglvyinsu<=s_gonglvyinsu18;
+  end if;
+  end process;
+end art;

@@ -1,0 +1,51 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;--to_unsigned
+--test--->25=16+9
+entity wugong is
+  port(clk:in std_logic;
+       yougong:in std_logic_vector(17 downto 0);
+       shizai:in std_logic_vector(27 downto 0);
+       wugong:out std_logic_vector(17 downto 0));
+end wugong;
+architecture art of wugong is
+  signal wugong_pinfang:std_logic_vector(35 downto 0);
+  signal yougong_int:integer range 0 to 1179647
+  signal shizai_int:integer range 0 to 268435455
+  type state is (s0,s1);
+  begin
+  yougong_int<=conv_integer(yougong);
+  shizai_int<=conv_integer(shizia);
+  wugong_pinfang<=(shizai_int*shizai_int - yougong_int*yougong_int);
+
+  process(clk,wugong_pinfang)
+  variable n:integer range 0 to 68719476735;
+  variable m:integer range 0 to 1179647;
+  variable s:integer range 0 to 68719476735;
+  variable din_integer:integer range 0 to 68719476735;
+  variable ps,ns:state:=s0;
+  begin 
+  din_integer:=conv_integer(wugong_pinfang);
+  if(clk'event and clk='1') then 
+    ps:=ns;
+    case ps is
+    when s0=>
+            n:=din_integer;
+            m:=0;
+            ns:=s1;
+    when s1=>
+            m:=m+1;
+            s:=m*m;
+            if(s<n) then 
+              ns:=s1;
+            else 
+              ns:=s0;
+              wugong<=std_logic_vector(to_unsigned(m,18));
+            end if;
+    when others=>null;
+    end case;
+  end if;
+  end process;
+end art;      

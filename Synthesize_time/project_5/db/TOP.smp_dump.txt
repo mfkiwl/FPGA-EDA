@@ -1,0 +1,11 @@
+
+State Machine - |TOP|TZKZQ:u10|mode
+Name mode.normal mode.year_set mode.mon_set mode.day_set mode.hour_set mode.min_set mode.sec_set mode.week_set 
+mode.week_set 0 0 0 0 0 0 0 0 
+mode.sec_set 0 0 0 0 0 0 1 1 
+mode.min_set 0 0 0 0 0 1 0 1 
+mode.hour_set 0 0 0 0 1 0 0 1 
+mode.day_set 0 0 0 1 0 0 0 1 
+mode.mon_set 0 0 1 0 0 0 0 1 
+mode.year_set 0 1 0 0 0 0 0 1 
+mode.normal 1 0 0 0 0 0 0 1 

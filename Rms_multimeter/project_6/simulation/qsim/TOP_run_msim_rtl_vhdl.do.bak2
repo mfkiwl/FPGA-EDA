@@ -1,0 +1,11 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {E:/quartus/EDA_PROJECT/project_6/sin.vhd}
+vcom -93 -work work {E:/quartus/EDA_PROJECT/project_6/cos.vhd}
+vcom -93 -work work {E:/quartus/EDA_PROJECT/project_6/ROM.vhd}
+

@@ -1,0 +1,258 @@
+# Reading D:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do TOP_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {E:/quartus/EDA_PROJECT/project_6/YMQ58.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity YMQ58
+# -- Compiling architecture art of YMQ58
+# vcom -93 -work work {E:/quartus/EDA_PROJECT/project_6/quling.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity quling
+# -- Compiling architecture art of quling
+# vcom -93 -work work {E:/quartus/EDA_PROJECT/project_6/display.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity display
+# -- Compiling architecture art of display
+# vcom -93 -work work {E:/quartus/EDA_PROJECT/project_6/data_change.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity data_change
+# -- Compiling architecture art of data_change
+# vcom -93 -work work {E:/quartus/EDA_PROJECT/project_6/shizaigonglv.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package LPM_COMPONENTS
+# -- Loading package NUMERIC_STD
+# -- Compiling entity shizaigonglv
+# -- Compiling architecture art of shizaigonglv
+# vcom -93 -work work {E:/quartus/EDA_PROJECT/project_6/qiuhe_gong.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity qiuhe_gong
+# -- Compiling architecture art of qiuhe_gong
+# vcom -93 -work work {E:/quartus/EDA_PROJECT/project_6/quzhiliu.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity quzhiliu
+# -- Compiling architecture art of quzhiliu
+# vcom -93 -work work {E:/quartus/EDA_PROJECT/project_6/qiuhe.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity qiuhe
+# -- Compiling architecture art of qiuhe
+# vcom -93 -work work {E:/quartus/EDA_PROJECT/project_6/genhao.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity genhao
+# -- Compiling architecture art of genhao
+# vcom -93 -work work {E:/quartus/EDA_PROJECT/project_6/youxiaozhi.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity youxiaozhi
+# -- Compiling architecture art of youxiaozhi
+# vcom -93 -work work {E:/quartus/EDA_PROJECT/project_6/yougong.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity yougong
+# -- Compiling architecture art of yougong
+# vcom -93 -work work {E:/quartus/EDA_PROJECT/project_6/xuanze.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity xuanze
+# -- Compiling architecture art of xuanze
+# vcom -93 -work work {E:/quartus/EDA_PROJECT/project_6/XSKZ.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity XSKZ
+# -- Compiling architecture art of XSKZ
+# vcom -93 -work work {E:/quartus/EDA_PROJECT/project_6/wugong.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity wugong
+# -- Compiling architecture art of wugong
+# vcom -93 -work work {E:/quartus/EDA_PROJECT/project_6/gonglvyinsu.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity gonglvyinsu
+# -- Compiling architecture art of gonglvyinsu
+# vcom -93 -work work {E:/quartus/EDA_PROJECT/project_6/fenpin.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity fenpin
+# -- Compiling architecture art of fenpin
+# vcom -93 -work work {E:/quartus/EDA_PROJECT/project_6/AD0809.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity AD0809
+# -- Compiling architecture art of AD0809
+# vcom -93 -work work {E:/quartus/EDA_PROJECT/project_6/TOP.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity TOP
+# -- Compiling architecture art of TOP
+# ** Warning: E:/quartus/EDA_PROJECT/project_6/TOP.vhd(139): Cannot associate port "new_clk_8K" of mode OUT with port "s_new_clk_8K" of mode BUFFER.
+# ** Warning: E:/quartus/EDA_PROJECT/project_6/TOP.vhd(139): Cannot associate port "new_clk_80k" of mode OUT with port "s_new_clk_80k" of mode BUFFER.
+# ** Warning: E:/quartus/EDA_PROJECT/project_6/TOP.vhd(139): Cannot associate port "new_clk_24M" of mode OUT with port "s_new_clk_24M" of mode BUFFER.
+# ** Warning: E:/quartus/EDA_PROJECT/project_6/TOP.vhd(139): Cannot associate port "new_clk_1hz" of mode OUT with port "s_new_clk_1hz" of mode BUFFER.
+# ** Warning: E:/quartus/EDA_PROJECT/project_6/TOP.vhd(141): Cannot associate port "rom_data_clk" of mode OUT with port "s_rom_clk_din1" of mode BUFFER.
+# ** Warning: E:/quartus/EDA_PROJECT/project_6/TOP.vhd(151): Cannot associate port "shizaigonglv" of mode OUT with port "s_shizaigonglv" of mode BUFFER.
+# ** Warning: E:/quartus/EDA_PROJECT/project_6/TOP.vhd(163): Cannot associate port "din1" of mode OUT with port "s_din1" of mode BUFFER.
+# ** Warning: E:/quartus/EDA_PROJECT/project_6/TOP.vhd(163): Cannot associate port "din2" of mode OUT with port "s_din2" of mode BUFFER.
+# vcom -93 -work work {E:/quartus/EDA_PROJECT/project_6/sin.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity sin
+# -- Compiling architecture SYN of sin
+# vcom -93 -work work {E:/quartus/EDA_PROJECT/project_6/cos.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity cos
+# -- Compiling architecture SYN of cos
+# vcom -93 -work work {E:/quartus/EDA_PROJECT/project_6/ROM.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity ROM
+# -- Compiling architecture art of ROM
+# 
+vsim -voptargs=+acc work.top(art)
+# vsim -voptargs=+acc work.top(art) 
+add wave -position insertpoint  \
+sim:/top/clk24M \
+sim:/top/eoc1 \
+sim:/top/eoc2 \
+sim:/top/key \
+sim:/top/start1 \
+sim:/top/oe1 \
+sim:/top/ale1 \
+sim:/top/start2 \
+sim:/top/oe2 \
+sim:/top/ale2 \
+sim:/top/dout \
+sim:/top/s_din1 \
+sim:/top/s_din2 \
+sim:/top/s_rom_clk_din1 \
+sim:/top/s_new_clk_8K \
+sim:/top/s_new_clk_80k \
+sim:/top/s_new_clk_24M \
+sim:/top/s_new_clk_1hz \
+sim:/top/s_shizaigonglv \
+sim:/top/sel \
+sim:/top/s_rom_clk_din2 \
+sim:/top/s_dout_I \
+sim:/top/s_dout_I_rms \
+sim:/top/s_dout_U \
+sim:/top/s_dout_U_rms \
+sim:/top/s_yougong \
+sim:/top/s_wugong \
+sim:/top/s_wugong_pinfang_int \
+sim:/top/s_gonglvyinsu \
+sim:/top/s_xuanze_dout \
+sim:/top/s_xuanze_dout7
+force -freeze sim:/top/clk24M 1 0, 0 {50 ps} -r 100
+force -freeze sim:/top/eoc1 1 0, 0 {50 ps} -r 100
+force -freeze sim:/top/eoc2 1 0, 0 {50 ps} -r 100
+run -all
+# Break key hit 
+# Break in Process line__15 at E:/quartus/EDA_PROJECT/project_6/fenpin.vhd line 15
+run -all
+# Break key hit 
+# Simulation stop requested.

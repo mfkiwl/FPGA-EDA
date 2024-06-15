@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\quartus\EDA_PROJECT\ROM\simulation\qsim
+vROM
+Z1 !s100 6z@]EWGEJhgc[4820;5WF3
+Z2 I]0an9Xfhj3eAOSMlNa9_B1
+Z3 V>cH18=TgjKl3^IeOG;zBM2
+Z4 dE:\quartus\EDA_PROJECT\ROM\simulation\qsim
+Z5 w1684483402
+Z6 8ROM.vo
+Z7 FROM.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|ROM.vo|
+Z10 o-work work -O0
+Z11 n@r@o@m
+!i10b 1
+!s85 0
+Z12 !s108 1684483402.856000
+Z13 !s107 ROM.vo|
+!s101 -O0
+vROM_vlg_check_tst
+!i10b 1
+Z14 !s100 [P<l2Gc?7U=WmJPP2m@LV2
+Z15 ITDizX>G;ZCkC`6_OlLJfU0
+Z16 VOHY8?K28X_Fg13]m1]miC1
+R4
+Z17 w1684483400
+Z18 8ROM.vwf.vt
+Z19 FROM.vwf.vt
+L0 57
+R8
+r1
+!s85 0
+31
+Z20 !s108 1684483402.946000
+Z21 !s107 ROM.vwf.vt|
+Z22 !s90 -work|work|ROM.vwf.vt|
+!s101 -O0
+R10
+Z23 n@r@o@m_vlg_check_tst
+vROM_vlg_sample_tst
+!i10b 1
+Z24 !s100 GohkoeBfBZ@f1I^5l2]@f2
+Z25 I;zF]S:Oh:CLAcnkOL=QGD3
+Z26 V^hD7f=O=<AUScmH5@VH:k2
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@r@o@m_vlg_sample_tst
+vROM_vlg_vec_tst
+!i10b 1
+Z28 !s100 OXdJno^>H_VIBaMhza?<51
+Z29 I>]z2TmMVhjPYX<NGSYlg@0
+Z30 Vd6an]VFi^mIj^QhQ:B`]33
+R4
+R17
+R18
+R19
+Z31 L0 429
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z32 n@r@o@m_vlg_vec_tst

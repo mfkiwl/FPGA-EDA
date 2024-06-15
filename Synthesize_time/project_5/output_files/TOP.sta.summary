@@ -1,0 +1,809 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'XSKZQ:u11|cnt[0]'
+Slack : -17.236
+TNS   : -104.499
+
+Type  : Slow 1200mV 85C Model Setup 'CNT60:u6|co'
+Slack : -7.450
+TNS   : -48.507
+
+Type  : Slow 1200mV 85C Model Setup 'CLKGEN:u1|cnt[0]'
+Slack : -6.028
+TNS   : -165.118
+
+Type  : Slow 1200mV 85C Model Setup 'CNT12:u3|co'
+Slack : -4.625
+TNS   : -30.703
+
+Type  : Slow 1200mV 85C Model Setup 'CNT24:u4|co'
+Slack : -4.452
+TNS   : -34.584
+
+Type  : Slow 1200mV 85C Model Setup 'TZKZQ:u10|mon[0]'
+Slack : -4.403
+TNS   : -8.061
+
+Type  : Slow 1200mV 85C Model Setup 'key1'
+Slack : -3.710
+TNS   : -34.079
+
+Type  : Slow 1200mV 85C Model Setup 'CNT60:u7|co'
+Slack : -3.702
+TNS   : -21.048
+
+Type  : Slow 1200mV 85C Model Setup 'key2'
+Slack : -3.672
+TNS   : -37.067
+
+Type  : Slow 1200mV 85C Model Setup 'CNT30:u5|co'
+Slack : -3.040
+TNS   : -14.330
+
+Type  : Slow 1200mV 85C Model Setup 'TZKZQ:u10|hour_en'
+Slack : -3.023
+TNS   : -11.654
+
+Type  : Slow 1200mV 85C Model Setup 'TZKZQ:u10|week_en'
+Slack : -2.630
+TNS   : -7.852
+
+Type  : Slow 1200mV 85C Model Setup 'TZKZQ:u10|year_en'
+Slack : -2.413
+TNS   : -15.898
+
+Type  : Slow 1200mV 85C Model Setup 'TZKZQ:u10|day_en'
+Slack : -2.309
+TNS   : -14.124
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -1.562
+TNS   : -10.912
+
+Type  : Slow 1200mV 85C Model Setup 'TZKZQ:u10|mon_en'
+Slack : -0.496
+TNS   : -1.558
+
+Type  : Slow 1200mV 85C Model Setup 'clr'
+Slack : -0.408
+TNS   : -1.998
+
+Type  : Slow 1200mV 85C Model Hold 'CLKGEN:u1|cnt[0]'
+Slack : -4.007
+TNS   : -71.178
+
+Type  : Slow 1200mV 85C Model Hold 'CNT60:u7|co'
+Slack : -2.454
+TNS   : -11.713
+
+Type  : Slow 1200mV 85C Model Hold 'CNT30:u5|co'
+Slack : -2.435
+TNS   : -11.704
+
+Type  : Slow 1200mV 85C Model Hold 'XSKZQ:u11|cnt[0]'
+Slack : -2.289
+TNS   : -7.565
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : -2.223
+TNS   : -11.192
+
+Type  : Slow 1200mV 85C Model Hold 'CNT24:u4|co'
+Slack : -2.195
+TNS   : -14.438
+
+Type  : Slow 1200mV 85C Model Hold 'CNT12:u3|co'
+Slack : -1.743
+TNS   : -9.015
+
+Type  : Slow 1200mV 85C Model Hold 'clr'
+Slack : -1.076
+TNS   : -8.755
+
+Type  : Slow 1200mV 85C Model Hold 'TZKZQ:u10|mon[0]'
+Slack : -1.002
+TNS   : -1.371
+
+Type  : Slow 1200mV 85C Model Hold 'TZKZQ:u10|mon_en'
+Slack : -0.569
+TNS   : -0.569
+
+Type  : Slow 1200mV 85C Model Hold 'CNT60:u6|co'
+Slack : -0.061
+TNS   : -0.061
+
+Type  : Slow 1200mV 85C Model Hold 'key1'
+Slack : -0.058
+TNS   : -0.073
+
+Type  : Slow 1200mV 85C Model Hold 'key2'
+Slack : -0.058
+TNS   : -0.073
+
+Type  : Slow 1200mV 85C Model Hold 'TZKZQ:u10|day_en'
+Slack : 0.923
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'TZKZQ:u10|hour_en'
+Slack : 1.434
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'TZKZQ:u10|year_en'
+Slack : 1.563
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'TZKZQ:u10|week_en'
+Slack : 2.010
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'CNT60:u6|co'
+Slack : -0.850
+TNS   : -3.292
+
+Type  : Slow 1200mV 85C Model Recovery 'key2'
+Slack : -0.608
+TNS   : -0.608
+
+Type  : Slow 1200mV 85C Model Recovery 'CNT24:u4|co'
+Slack : -0.348
+TNS   : -1.392
+
+Type  : Slow 1200mV 85C Model Recovery 'clr'
+Slack : -0.227
+TNS   : -0.227
+
+Type  : Slow 1200mV 85C Model Recovery 'CLKGEN:u1|cnt[0]'
+Slack : -0.078
+TNS   : -0.447
+
+Type  : Slow 1200mV 85C Model Recovery 'CNT12:u3|co'
+Slack : 0.258
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'CNT30:u5|co'
+Slack : 0.496
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'CNT60:u7|co'
+Slack : 0.593
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'clr'
+Slack : -1.832
+TNS   : -18.845
+
+Type  : Slow 1200mV 85C Model Removal 'CNT24:u4|co'
+Slack : -1.133
+TNS   : -4.145
+
+Type  : Slow 1200mV 85C Model Removal 'CNT60:u7|co'
+Slack : -0.754
+TNS   : -3.769
+
+Type  : Slow 1200mV 85C Model Removal 'CNT30:u5|co'
+Slack : -0.585
+TNS   : -2.340
+
+Type  : Slow 1200mV 85C Model Removal 'CLKGEN:u1|cnt[0]'
+Slack : -0.354
+TNS   : -2.106
+
+Type  : Slow 1200mV 85C Model Removal 'CNT12:u3|co'
+Slack : -0.322
+TNS   : -2.248
+
+Type  : Slow 1200mV 85C Model Removal 'key2'
+Slack : -0.044
+TNS   : -0.044
+
+Type  : Slow 1200mV 85C Model Removal 'CNT60:u6|co'
+Slack : 0.082
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -16.383
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clr'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'key1'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'key2'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLKGEN:u1|cnt[0]'
+Slack : -1.487
+TNS   : -84.759
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CNT24:u4|co'
+Slack : -1.487
+TNS   : -16.357
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CNT12:u3|co'
+Slack : -1.487
+TNS   : -10.409
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CNT60:u6|co'
+Slack : -1.487
+TNS   : -10.409
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CNT60:u7|co'
+Slack : -1.487
+TNS   : -8.922
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CNT30:u5|co'
+Slack : -1.487
+TNS   : -7.435
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'TZKZQ:u10|mon[0]'
+Slack : 0.323
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'XSKZQ:u11|cnt[0]'
+Slack : 0.367
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'TZKZQ:u10|day_en'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'TZKZQ:u10|week_en'
+Slack : 0.425
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'TZKZQ:u10|year_en'
+Slack : 0.430
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'TZKZQ:u10|mon_en'
+Slack : 0.443
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'TZKZQ:u10|hour_en'
+Slack : 0.467
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'XSKZQ:u11|cnt[0]'
+Slack : -15.988
+TNS   : -97.577
+
+Type  : Slow 1200mV 0C Model Setup 'CNT60:u6|co'
+Slack : -7.026
+TNS   : -45.905
+
+Type  : Slow 1200mV 0C Model Setup 'CLKGEN:u1|cnt[0]'
+Slack : -5.751
+TNS   : -154.835
+
+Type  : Slow 1200mV 0C Model Setup 'CNT12:u3|co'
+Slack : -4.258
+TNS   : -28.114
+
+Type  : Slow 1200mV 0C Model Setup 'TZKZQ:u10|mon[0]'
+Slack : -4.176
+TNS   : -7.744
+
+Type  : Slow 1200mV 0C Model Setup 'CNT24:u4|co'
+Slack : -4.162
+TNS   : -31.361
+
+Type  : Slow 1200mV 0C Model Setup 'key1'
+Slack : -3.625
+TNS   : -33.464
+
+Type  : Slow 1200mV 0C Model Setup 'key2'
+Slack : -3.576
+TNS   : -36.077
+
+Type  : Slow 1200mV 0C Model Setup 'CNT60:u7|co'
+Slack : -3.360
+TNS   : -19.015
+
+Type  : Slow 1200mV 0C Model Setup 'CNT30:u5|co'
+Slack : -2.841
+TNS   : -13.330
+
+Type  : Slow 1200mV 0C Model Setup 'TZKZQ:u10|hour_en'
+Slack : -2.730
+TNS   : -10.369
+
+Type  : Slow 1200mV 0C Model Setup 'TZKZQ:u10|week_en'
+Slack : -2.347
+TNS   : -7.009
+
+Type  : Slow 1200mV 0C Model Setup 'TZKZQ:u10|year_en'
+Slack : -2.160
+TNS   : -14.120
+
+Type  : Slow 1200mV 0C Model Setup 'TZKZQ:u10|day_en'
+Slack : -2.072
+TNS   : -12.386
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -1.415
+TNS   : -9.405
+
+Type  : Slow 1200mV 0C Model Setup 'TZKZQ:u10|mon_en'
+Slack : -0.477
+TNS   : -1.392
+
+Type  : Slow 1200mV 0C Model Setup 'clr'
+Slack : -0.244
+TNS   : -0.979
+
+Type  : Slow 1200mV 0C Model Hold 'CLKGEN:u1|cnt[0]'
+Slack : -3.701
+TNS   : -64.691
+
+Type  : Slow 1200mV 0C Model Hold 'CNT60:u7|co'
+Slack : -2.289
+TNS   : -10.851
+
+Type  : Slow 1200mV 0C Model Hold 'CNT30:u5|co'
+Slack : -2.258
+TNS   : -10.752
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : -2.188
+TNS   : -11.149
+
+Type  : Slow 1200mV 0C Model Hold 'XSKZQ:u11|cnt[0]'
+Slack : -2.155
+TNS   : -7.083
+
+Type  : Slow 1200mV 0C Model Hold 'CNT24:u4|co'
+Slack : -2.097
+TNS   : -13.699
+
+Type  : Slow 1200mV 0C Model Hold 'CNT12:u3|co'
+Slack : -1.648
+TNS   : -8.503
+
+Type  : Slow 1200mV 0C Model Hold 'clr'
+Slack : -1.216
+TNS   : -10.610
+
+Type  : Slow 1200mV 0C Model Hold 'TZKZQ:u10|mon[0]'
+Slack : -0.869
+TNS   : -1.002
+
+Type  : Slow 1200mV 0C Model Hold 'TZKZQ:u10|mon_en'
+Slack : -0.412
+TNS   : -0.412
+
+Type  : Slow 1200mV 0C Model Hold 'key2'
+Slack : 0.042
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CNT60:u6|co'
+Slack : 0.053
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'key1'
+Slack : 0.058
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'TZKZQ:u10|day_en'
+Slack : 0.741
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'TZKZQ:u10|hour_en'
+Slack : 1.317
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'TZKZQ:u10|year_en'
+Slack : 1.458
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'TZKZQ:u10|week_en'
+Slack : 1.875
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'CNT60:u6|co'
+Slack : -0.752
+TNS   : -2.748
+
+Type  : Slow 1200mV 0C Model Recovery 'key2'
+Slack : -0.419
+TNS   : -0.419
+
+Type  : Slow 1200mV 0C Model Recovery 'CNT24:u4|co'
+Slack : -0.065
+TNS   : -0.260
+
+Type  : Slow 1200mV 0C Model Recovery 'CLKGEN:u1|cnt[0]'
+Slack : -0.063
+TNS   : -0.345
+
+Type  : Slow 1200mV 0C Model Recovery 'clr'
+Slack : 0.197
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'CNT12:u3|co'
+Slack : 0.396
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'CNT30:u5|co'
+Slack : 0.652
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'CNT60:u7|co'
+Slack : 0.733
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'clr'
+Slack : -1.872
+TNS   : -19.491
+
+Type  : Slow 1200mV 0C Model Removal 'CNT24:u4|co'
+Slack : -1.114
+TNS   : -4.202
+
+Type  : Slow 1200mV 0C Model Removal 'CNT60:u7|co'
+Slack : -0.709
+TNS   : -3.545
+
+Type  : Slow 1200mV 0C Model Removal 'CNT30:u5|co'
+Slack : -0.580
+TNS   : -2.320
+
+Type  : Slow 1200mV 0C Model Removal 'CNT12:u3|co'
+Slack : -0.306
+TNS   : -2.142
+
+Type  : Slow 1200mV 0C Model Removal 'CLKGEN:u1|cnt[0]'
+Slack : -0.168
+TNS   : -0.972
+
+Type  : Slow 1200mV 0C Model Removal 'key2'
+Slack : -0.051
+TNS   : -0.051
+
+Type  : Slow 1200mV 0C Model Removal 'CNT60:u6|co'
+Slack : 0.214
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -16.383
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clr'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'key1'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'key2'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLKGEN:u1|cnt[0]'
+Slack : -1.487
+TNS   : -84.759
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CNT24:u4|co'
+Slack : -1.487
+TNS   : -16.448
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CNT12:u3|co'
+Slack : -1.487
+TNS   : -10.409
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CNT60:u6|co'
+Slack : -1.487
+TNS   : -10.409
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CNT60:u7|co'
+Slack : -1.487
+TNS   : -8.922
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CNT30:u5|co'
+Slack : -1.487
+TNS   : -7.435
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'TZKZQ:u10|mon[0]'
+Slack : 0.116
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'XSKZQ:u11|cnt[0]'
+Slack : 0.218
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'TZKZQ:u10|day_en'
+Slack : 0.249
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'TZKZQ:u10|year_en'
+Slack : 0.300
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'TZKZQ:u10|mon_en'
+Slack : 0.328
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'TZKZQ:u10|week_en'
+Slack : 0.329
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'TZKZQ:u10|hour_en'
+Slack : 0.336
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'XSKZQ:u11|cnt[0]'
+Slack : -6.595
+TNS   : -39.502
+
+Type  : Fast 1200mV 0C Model Setup 'CNT60:u6|co'
+Slack : -2.503
+TNS   : -16.079
+
+Type  : Fast 1200mV 0C Model Setup 'CLKGEN:u1|cnt[0]'
+Slack : -1.982
+TNS   : -48.171
+
+Type  : Fast 1200mV 0C Model Setup 'CNT12:u3|co'
+Slack : -1.432
+TNS   : -8.978
+
+Type  : Fast 1200mV 0C Model Setup 'TZKZQ:u10|mon[0]'
+Slack : -1.384
+TNS   : -2.406
+
+Type  : Fast 1200mV 0C Model Setup 'CNT24:u4|co'
+Slack : -1.373
+TNS   : -9.656
+
+Type  : Fast 1200mV 0C Model Setup 'CNT60:u7|co'
+Slack : -1.017
+TNS   : -5.479
+
+Type  : Fast 1200mV 0C Model Setup 'key2'
+Slack : -0.984
+TNS   : -9.613
+
+Type  : Fast 1200mV 0C Model Setup 'key1'
+Slack : -0.935
+TNS   : -8.588
+
+Type  : Fast 1200mV 0C Model Setup 'TZKZQ:u10|day_en'
+Slack : -0.922
+TNS   : -3.107
+
+Type  : Fast 1200mV 0C Model Setup 'CNT30:u5|co'
+Slack : -0.774
+TNS   : -3.592
+
+Type  : Fast 1200mV 0C Model Setup 'TZKZQ:u10|hour_en'
+Slack : -0.730
+TNS   : -2.148
+
+Type  : Fast 1200mV 0C Model Setup 'TZKZQ:u10|week_en'
+Slack : -0.570
+TNS   : -1.689
+
+Type  : Fast 1200mV 0C Model Setup 'TZKZQ:u10|year_en'
+Slack : -0.495
+TNS   : -2.898
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -0.359
+TNS   : -0.547
+
+Type  : Fast 1200mV 0C Model Setup 'TZKZQ:u10|mon_en'
+Slack : 0.079
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clr'
+Slack : 0.305
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLKGEN:u1|cnt[0]'
+Slack : -1.839
+TNS   : -34.567
+
+Type  : Fast 1200mV 0C Model Hold 'CNT60:u7|co'
+Slack : -1.242
+TNS   : -6.132
+
+Type  : Fast 1200mV 0C Model Hold 'CNT30:u5|co'
+Slack : -1.240
+TNS   : -5.986
+
+Type  : Fast 1200mV 0C Model Hold 'XSKZQ:u11|cnt[0]'
+Slack : -1.156
+TNS   : -4.643
+
+Type  : Fast 1200mV 0C Model Hold 'CNT24:u4|co'
+Slack : -1.122
+TNS   : -7.630
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : -1.007
+TNS   : -5.082
+
+Type  : Fast 1200mV 0C Model Hold 'CNT12:u3|co'
+Slack : -0.941
+TNS   : -5.418
+
+Type  : Fast 1200mV 0C Model Hold 'TZKZQ:u10|mon[0]'
+Slack : -0.470
+TNS   : -0.803
+
+Type  : Fast 1200mV 0C Model Hold 'clr'
+Slack : -0.456
+TNS   : -3.826
+
+Type  : Fast 1200mV 0C Model Hold 'TZKZQ:u10|mon_en'
+Slack : -0.365
+TNS   : -0.950
+
+Type  : Fast 1200mV 0C Model Hold 'key2'
+Slack : -0.251
+TNS   : -1.312
+
+Type  : Fast 1200mV 0C Model Hold 'key1'
+Slack : -0.246
+TNS   : -1.274
+
+Type  : Fast 1200mV 0C Model Hold 'CNT60:u6|co'
+Slack : -0.231
+TNS   : -0.231
+
+Type  : Fast 1200mV 0C Model Hold 'TZKZQ:u10|day_en'
+Slack : 0.433
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'TZKZQ:u10|hour_en'
+Slack : 0.576
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'TZKZQ:u10|year_en'
+Slack : 0.642
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'TZKZQ:u10|week_en'
+Slack : 0.831
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'clr'
+Slack : -0.542
+TNS   : -4.060
+
+Type  : Fast 1200mV 0C Model Recovery 'key2'
+Slack : -0.506
+TNS   : -0.506
+
+Type  : Fast 1200mV 0C Model Recovery 'CNT60:u6|co'
+Slack : -0.492
+TNS   : -2.263
+
+Type  : Fast 1200mV 0C Model Recovery 'CLKGEN:u1|cnt[0]'
+Slack : -0.216
+TNS   : -1.281
+
+Type  : Fast 1200mV 0C Model Recovery 'CNT24:u4|co'
+Slack : -0.115
+TNS   : -0.460
+
+Type  : Fast 1200mV 0C Model Recovery 'CNT12:u3|co'
+Slack : 0.258
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'CNT30:u5|co'
+Slack : 0.338
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'CNT60:u7|co'
+Slack : 0.359
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'clr'
+Slack : -0.649
+TNS   : -6.542
+
+Type  : Fast 1200mV 0C Model Removal 'CNT24:u4|co'
+Slack : -0.494
+TNS   : -1.815
+
+Type  : Fast 1200mV 0C Model Removal 'CNT60:u7|co'
+Slack : -0.321
+TNS   : -1.604
+
+Type  : Fast 1200mV 0C Model Removal 'CLKGEN:u1|cnt[0]'
+Slack : -0.272
+TNS   : -1.617
+
+Type  : Fast 1200mV 0C Model Removal 'CNT30:u5|co'
+Slack : -0.265
+TNS   : -1.060
+
+Type  : Fast 1200mV 0C Model Removal 'CNT12:u3|co'
+Slack : -0.181
+TNS   : -1.267
+
+Type  : Fast 1200mV 0C Model Removal 'CNT60:u6|co'
+Slack : -0.077
+TNS   : -0.360
+
+Type  : Fast 1200mV 0C Model Removal 'key2'
+Slack : -0.026
+TNS   : -0.026
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -13.964
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clr'
+Slack : -3.000
+TNS   : -7.880
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'key1'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'key2'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLKGEN:u1|cnt[0]'
+Slack : -1.000
+TNS   : -57.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CNT24:u4|co'
+Slack : -1.000
+TNS   : -11.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CNT12:u3|co'
+Slack : -1.000
+TNS   : -7.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CNT60:u6|co'
+Slack : -1.000
+TNS   : -7.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CNT60:u7|co'
+Slack : -1.000
+TNS   : -6.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CNT30:u5|co'
+Slack : -1.000
+TNS   : -5.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'TZKZQ:u10|day_en'
+Slack : 0.305
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'XSKZQ:u11|cnt[0]'
+Slack : 0.308
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'TZKZQ:u10|hour_en'
+Slack : 0.325
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'TZKZQ:u10|mon[0]'
+Slack : 0.339
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'TZKZQ:u10|year_en'
+Slack : 0.356
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'TZKZQ:u10|mon_en'
+Slack : 0.370
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'TZKZQ:u10|week_en'
+Slack : 0.406
+TNS   : 0.000
+
+------------------------------------------------------------

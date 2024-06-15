@@ -1,0 +1,42 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\quartus\EDA_PROJECT\ROM\simulation\qsim
+Esin
+Z1 w1684492912
+Z2 DPx9 altera_mf 20 altera_mf_components 0 22 zh;bE09gCIPDVLK?MN49L3
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dE:\quartus\EDA_PROJECT\ROM\simulation\qsim
+Z6 8E:/quartus/EDA_PROJECT/ROM/sin.vhd
+Z7 FE:/quartus/EDA_PROJECT/ROM/sin.vhd
+l0
+L42
+VTFUEBM=bADBmLH7:mlRMA0
+!s100 NUMD_QAbG?:?JTAdT3XU52
+Z8 OV;C;10.1d;51
+31
+!i10b 1
+Z9 !s108 1685289956.433000
+Z10 !s90 -reportprogress|300|-93|-work|work|E:/quartus/EDA_PROJECT/ROM/sin.vhd|
+Z11 !s107 E:/quartus/EDA_PROJECT/ROM/sin.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+Asyn
+R2
+R3
+R4
+DEx4 work 3 sin 0 22 TFUEBM=bADBmLH7:mlRMA0
+l56
+L52
+VBde?L;LU0SVReHa]lmX`>3
+!s100 2GWFM]h^CRAFYelSTX8?d0
+R8
+31
+!i10b 1
+R9
+R10
+R11
+R12
+R13

@@ -1,0 +1,48 @@
+library ieee;
+use ieee.std_logic_1164.all;
+entity AD0809 is
+  port(clk,eoc:in std_logic;
+       din:in std_logic_vector(7 downto 0);
+       start,oe,ale:out std_logic;
+       dout:out std_logic_vector(7 downto 0));
+end entity AD0809;
+architecture  art of AD0809 is
+  begin
+    process(clk)
+    variable x,y:std_logic;
+    variable state:integer range 0 to <2>;
+    begin 
+      if clk'event and clk'='1' then 
+        if x='0' then 
+          case state is 
+            when 0 => ale<='1';
+                      state:=1;
+            when 1 => start<='1';
+                      state:=2;
+            when 2 => ale<='0';
+                      start<='0';
+                      state:=0;
+                      x:='1';
+          end case;
+        else 
+          if eoc='0' then 
+            y:='1';
+          end if;
+          if y:='1' then 
+            if eoc='1' then 
+              case state is 
+                when 0 =>oe<='1';
+                         state:=1;
+                when 1 =>dout<=din;
+                         state:=2;
+                when2 =>oe<='0';
+                        x:='0';
+                        y:='0';
+              end case;
+            end if;
+          end if;
+        end if;
+      end if;
+    end process;
+end art;
+      

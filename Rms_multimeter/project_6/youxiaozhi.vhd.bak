@@ -1,0 +1,103 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+library lpm;
+use lpm.lpm_components.all;
+entity youxiaozhi is 
+  port(clk648:in std_logic;
+       clk8k:in std_logic;
+       din:in std_logic_vector(7 downto 0);
+       dout:out std_logic_vector(13 downto 0));
+end youxiaozhi;
+architecture art of youxiaozhi is
+
+--component
+  component genhao is
+    port(clk:in std_logic;
+        din:in std_logic_vector(17 downto 0);
+        dout:out std_logic_vector(7 downto 0));
+  end component genhao;
+
+  component quzhiliu is
+    port(v:in std_logic_vector(7 downto 0);
+         dout:out std_logic_vector(7 downto 0));
+  end component quzhiliu;
+
+  component qiuhe is 
+  port(clk8k:in std_logic;
+       din:in std_logic_vector(7 downto 0);
+       dout:out std_logic_vector(28 downto 0));
+  end component qiuhe;
+
+--signal
+  signal s_dout_q_8: std_logic_vector(7 downto 0);
+  signal s_dout_g_8: std_logic_vector(7 downto 0);
+  signal s_dout29: std_logic_vector(28 downto 0);
+  signal s_quotient_8000_17: std_logic_vector(16 downto 0);
+  signal s_remain_8000_13: std_logic_vector(12 downto 0);
+  signal s_result_10000_22: std_logic_vector(21 downto 0);
+  signal s_remain_256_9: std_logic_vector(8 downto 0);
+
+  
+  begin
+    --remove the dc component
+    u0:quzhiliu port map(din,s_dout_q_8);
+
+    --summation
+    u1:qiuhe port map(clk8k,s_dout_q_8,s_dout29);
+
+    --square root
+    u2:genhao port map(clk648,s_quotient_8000_17,s_dout_g_8);
+
+    --divide by 8000
+    chufa8000 : LPM_DIVIDE
+    generic map (
+      lpm_drepresentation => "UNSIGNED",
+      lpm_hint => "LPM_REMAINDERPOSITIVE=TRUE",
+      lpm_nrepresentation => "UNSIGNED",
+      lpm_type => "LPM_DIVIDE",
+      lpm_widthd => 13,
+      lpm_widthn => 29
+    )
+    port map (
+      denom => "1 1111 0100 0000",--8000
+      numer => s_dout29,
+      quotient => s_quotient_8000_17,
+      remain => s_remain_8000_13
+    );
+
+    --multiply by 10000
+    chengfa10000 : lpm_mult
+    generic map (
+      lpm_hint => "MAXIMIZE_SPEED=5",
+      lpm_representation => "UNSIGNED",
+      lpm_type => "LPM_MULT",
+      lpm_widtha => 8,
+      lpm_widthb => 16,
+      lpm_widthp => 16
+    )
+    port map (
+      dataa => s_dout_g_8,
+      datab => "0010 0111 0001 0000",--10000
+      result => s_result_10000_22
+    );
+
+    --divide by 256
+    chufa256 : LPM_DIVIDE
+    generic map (
+      lpm_drepresentation => "UNSIGNED",
+      lpm_hint => "LPM_REMAINDERPOSITIVE=TRUE",
+      lpm_nrepresentation => "UNSIGNED",
+      lpm_type => "LPM_DIVIDE",
+      lpm_widthd => 9,
+      lpm_widthn => 22
+    )
+    port map (
+      denom => "1 0000 0000",--256
+      numer => s_result_10000_22,
+      quotient => dout,
+      remain => s_remain_256_9
+    );
+end architecture art;
+   
+      

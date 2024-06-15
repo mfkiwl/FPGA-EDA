@@ -1,0 +1,11 @@
+
+State Machine - |TOP|XSKZ:u10|display:u8|ns
+Name ns.s7 ns.s6 ns.s5 ns.s4 ns.s3 ns.s2 ns.s1 ns.s0 
+ns.s0 0 0 0 0 0 0 0 0 
+ns.s1 0 0 0 0 0 0 1 1 
+ns.s2 0 0 0 0 0 1 0 1 
+ns.s3 0 0 0 0 1 0 0 1 
+ns.s4 0 0 0 1 0 0 0 1 
+ns.s5 0 0 1 0 0 0 0 1 
+ns.s6 0 1 0 0 0 0 0 1 
+ns.s7 1 0 0 0 0 0 0 1 

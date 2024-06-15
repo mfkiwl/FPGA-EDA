@@ -1,0 +1,96 @@
+﻿library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+entity tzkzq is
+    port(key1: in std_logic;  
+	     key2: in std_logic;
+         clk_key:in std_logic;
+         max_days:in std_logic_vector(4 downto 0);
+         sec_en ,min_en,hour_en,day_en,
+         mon_en,year_en,week_en:out std_logic;
+         hour_cur:in std_logic_vector(4 downto 0);
+         min_cur,sec_cur:in std_logic_vector(5 downto 0);
+         year_cur:in std_logic_vector(6 downto 0);
+         mon_cur:in std_logic_vector(3 downto 0);
+         day_cur:in std_logic_vector(4 downto 0);
+         week_cur:in std_logic_vector(2 downto 0);
+         sec,min:buffer std_logic_vector(5 downto 0);
+         hour:buffer std_logic_vector(4 downto 0);
+         day:buffer std_logic_vector(4 downto 0);
+         mon:buffer std_logic_vector(3 downto 0);
+         year:buffer std_logic_vector(6 downto 0);
+         week:buffer std_logic_vector(2 downto 0));
+end entity tzkzq;
+architecture art of tzkzq is
+type statetype is (normal,sec_set,min_set,hour_set,
+	               day_set,mon_set,year_set,week_set);
+	signal mode :statetype; 
+	signal key :std_logic_vector(1 downto 0);
+	begin
+	key<=key1&key2;
+    process(key,clk_key) is
+	begin  
+	if clk_key'event and clk_key='1' then
+    if key="01" then  
+	sec_en <='1';min_en<='1';hour_en<='1';
+	day_en<='1';mon_en<='1';year_en <='1';week_en<='1';
+        case mode is
+            when normal =>mode <=sec_set;sec<=sec_cur;sec_en<='0';
+            when sec_set =>mode <=min_set;min<=min_cur;sec_en<='1';min_en<='0'; 
+            when min_set =>mode <=hour_set;hour<=hour_cur;min_en<='1';hour_en<='0';
+            when hour_set =>mode <=day_set;day<=day_cur;hour_en<='1';day_en<='0';
+            when day_set =>mode <=mon_set;mon<=mon_cur;day_en<='1';mon_en<='0';
+            when mon_set =>mode <=year_set;year<=year_cur;mon_en<='1';year_en<='0';
+            when year_set =>mode <=week_set;week<=week_cur;year_en<='1';week_en<='0';
+            when week_set=>mode<=normal;
+        end case;
+    elsif key="10" then 
+     case mode is
+        when sec_set=>sec_en<='0'; 
+            if sec="111011" then
+                            sec<="000000";
+                        else
+                            sec<=sec+1;
+                        end if;
+        when min_set=>min_en<='0';
+            if min="111011" then
+                            min<="000000";
+                        else
+                            min<=min+1;
+                        end if;
+        when hour_set=>hour_en<='0';
+            if hour="11000" then
+                            hour<="00000";
+                        else
+                            hour<=hour+1;
+                        end if;
+        when day_set=>day_en<='0';
+            if day=max_days then
+                            day<="00001";
+                        else
+                            day<=day+1;
+                        end if;
+        when mon_set=>mon_en<='0';
+            if mon="1100" then
+                            mon<="0001";
+                        else
+                            mon<=mon+1;
+                        end if;
+        when year_set=>year_en<='0';
+            if year="1100011" then
+                            year<="0000001";
+                        else
+                            year<=year+1;
+                        end if;
+        when week_set=>week_en<='0';
+            if week="111" then
+                            week<="001";
+                        else
+                            week<=week+1;
+                        end if;
+        when others =>null;
+    end case;
+			end if;
+		end if;
+	end process;
+end architecture art;

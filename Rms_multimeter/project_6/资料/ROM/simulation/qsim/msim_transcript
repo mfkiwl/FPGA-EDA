@@ -1,0 +1,38 @@
+# Reading D:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do ROM_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {E:/quartus/EDA_PROJECT/ROM/sin.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity sin
+# -- Compiling architecture SYN of sin
+# 
+vsim -voptargs=+acc work.sin
+# vsim -voptargs=+acc work.sin 
+add wave -position insertpoint  \
+sim:/sin/address \
+sim:/sin/clock \
+sim:/sin/q \
+sim:/sin/sub_wire0
+force -freeze sim:/sin/clock 1 0, 0 {5 ps} -r 10
+force -freeze sim:/sin/address(0) 1 0, 0 {5 ps} -r 10
+force -freeze sim:/sin/address(1) 1 0, 0 {10 ps} -r 20
+force -freeze sim:/sin/address(2) 1 0, 0 {20 ps} -r 40
+force -freeze sim:/sin/address(3) 1 0, 0 {40 ps} -r 80
+force -freeze sim:/sin/address(4) 1 0, 0 {80 ps} -r 160
+force -freeze sim:/sin/address(5) 1 0, 0 {160 ps} -r 320
+force -freeze sim:/sin/address(6) 1 0, 0 {320 ps} -r 640
+force -freeze sim:/sin/address(7) 1 0, 0 {640 ps} -r 1280
+run

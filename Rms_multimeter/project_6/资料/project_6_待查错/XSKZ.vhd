@@ -1,0 +1,160 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+library lpm;
+use lpm.lpm_components.all;
+entity XSKZ is
+  port(kk:in std_logic_vector(2 downto 0);
+       ru:in std_logic_vector(15 downto 0);
+       clk24M:in std_logic;
+       --The faster the display control clock, the better
+       din7:in std_logic_vector(4 downto 0);
+       dout7:out std_logic_vector(7 downto 0);
+       sel:out std_logic_vector(7 downto 0));
+end XSKZ;
+architecture art of XSKZ is
+--component
+component data_change is
+  port(kk:in std_logic_vector(2 downto 0);
+       din0,din1,din2:in std_logic_vector(3 downto 0);
+       din4:in std_logic_vector(2 downto 0);
+		 din3:in std_logic_vector(4 downto 0);
+       dout0,dout1,dout2,dout3,dout4:out std_logic_vector(4 downto 0));
+end component data_change;
+
+component YMQ58 is
+  port(a:in std_logic_vector(4 downto 0);
+       Y:out std_logic_vector(7 downto 0));
+end component YMQ58;
+
+component quling is
+  port(din0,din1,din2,din3,din4:in std_logic_vector(7 downto 0);
+       dout0,dout1,dout2,dout3,dout4:out std_logic_vector(7 downto 0));
+end component quling;
+
+component display is
+  port(clk256:in std_logic;
+       din0,din1,din2,din3,din4,
+       din7:in std_logic_vector(7 downto 0);
+       dout:out std_logic_vector(7 downto 0);
+       sel:out std_logic_vector(7 downto 0));
+end component display;
+
+--signal
+signal s_quotient_10000_16:std_logic_vector(15 downto 0);
+signal s_remain_10000_14:std_logic_vector(13 downto 0);
+signal s_quotient_1000_14:std_logic_vector(13 downto 0);
+signal s_remain_1000_10:std_logic_vector(9 downto 0);
+signal s_quotient_100_10:std_logic_vector(9 downto 0);
+signal s_remain_100_7:std_logic_vector(6 downto 0);
+signal s_quotient_10_7:std_logic_vector(6 downto 0);
+signal s_remain_10_4:std_logic_vector(3 downto 0);
+
+signal s_data_change_dout0:std_logic_vector(4 downto 0);
+signal s_data_change_dout1:std_logic_vector(4 downto 0);
+signal s_data_change_dout2:std_logic_vector(4 downto 0);
+signal s_data_change_dout3:std_logic_vector(4 downto 0);
+signal s_data_change_dout4:std_logic_vector(4 downto 0);
+
+signal s_YMQ58_Y0:std_logic_vector(7 downto 0);
+signal s_YMQ58_Y1:std_logic_vector(7 downto 0);
+signal s_YMQ58_Y2:std_logic_vector(7 downto 0);
+signal s_YMQ58_Y3:std_logic_vector(7 downto 0);
+signal s_YMQ58_Y4:std_logic_vector(7 downto 0);
+signal s_YMQ58_Y7:std_logic_vector(7 downto 0);
+
+signal s_quling_dout0:std_logic_vector(7 downto 0);
+signal s_quling_dout1:std_logic_vector(7 downto 0);
+signal s_quling_dout2:std_logic_vector(7 downto 0);
+signal s_quling_dout3:std_logic_vector(7 downto 0);
+signal s_quling_dout4:std_logic_vector(7 downto 0);
+
+--
+  begin
+    chufa10000 : LPM_DIVIDE
+    generic map (
+      lpm_drepresentation => "UNSIGNED",
+      lpm_hint => "LPM_REMAINDERPOSITIVE=TRUE",
+      lpm_nrepresentation => "UNSIGNED",
+      lpm_type => "LPM_DIVIDE",
+      lpm_widthd => 14,--10000
+      lpm_widthn => 16
+    )
+    port map (
+      denom => "10011100010000",--10000
+      numer => ru,
+      quotient => s_quotient_10000_16,
+      remain => s_remain_10000_14
+    );
+
+    chufa1000 : LPM_DIVIDE
+    generic map (
+      lpm_drepresentation => "UNSIGNED",
+      lpm_hint => "LPM_REMAINDERPOSITIVE=TRUE",
+      lpm_nrepresentation => "UNSIGNED",
+      lpm_type => "LPM_DIVIDE",
+      lpm_widthd => 10,--1000
+      lpm_widthn => 14
+    )
+    port map (
+      denom => "1111101000",--1000
+      numer => s_remain_10000_14,
+      quotient => s_quotient_1000_14,
+      remain => s_remain_1000_10
+    );
+
+    chufa100 : LPM_DIVIDE
+    generic map (
+      lpm_drepresentation => "UNSIGNED",
+      lpm_hint => "LPM_REMAINDERPOSITIVE=TRUE",
+      lpm_nrepresentation => "UNSIGNED",
+      lpm_type => "LPM_DIVIDE",
+      lpm_widthd => 7,--100
+      lpm_widthn => 10
+    )
+    port map (
+      denom => "1100100",--100
+      numer => s_remain_1000_10,
+      quotient => s_quotient_100_10,
+      remain => s_remain_100_7
+    );
+
+    chufa10 : LPM_DIVIDE
+    generic map (
+      lpm_drepresentation => "UNSIGNED",
+      lpm_hint => "LPM_REMAINDERPOSITIVE=TRUE",
+      lpm_nrepresentation => "UNSIGNED",
+      lpm_type => "LPM_DIVIDE",
+      lpm_widthd => 4,--10
+      lpm_widthn => 7
+    )
+    port map (
+      denom => "1010",--10
+      numer => s_remain_100_7,
+      quotient => s_quotient_10_7,
+      remain => s_remain_10_4
+    );
+
+    u0:data_change 
+      port map(kk,s_remain_10_4,s_quotient_10_7(3 downto 0),--kk,din0,din1
+               s_quotient_100_10(3 downto 0),s_quotient_10000_16(2 downto 0),--din2,din4
+               s_quotient_1000_14(4 downto 0),--din3
+               s_data_change_dout0,s_data_change_dout1,s_data_change_dout2,
+               s_data_change_dout3,s_data_change_dout4);
+    u1:YMQ58 port map(s_data_change_dout0,s_YMQ58_Y0);
+    u2:YMQ58 port map(s_data_change_dout1,s_YMQ58_Y1);
+    u3:YMQ58 port map(s_data_change_dout2,s_YMQ58_Y2);
+    u4:YMQ58 port map(s_data_change_dout3,s_YMQ58_Y3);
+    u5:YMQ58 port map(s_data_change_dout4,s_YMQ58_Y4);
+    u6:YMQ58 port map(din7,s_YMQ58_Y7);
+
+    u7:quling port map(s_YMQ58_Y0,s_YMQ58_Y1,s_YMQ58_Y2,s_YMQ58_Y3,s_YMQ58_Y4,
+                       s_quling_dout0,s_quling_dout1,s_quling_dout2,
+                       s_quling_dout3,s_quling_dout4);
+    
+    u8:display port map(clk24M,s_quling_dout0,s_quling_dout1,s_quling_dout2,
+                        s_quling_dout3,s_quling_dout4,s_YMQ58_Y7,
+                        dout7,sel);
+end art;
+
+

@@ -1,0 +1,46 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+entity data_change is
+  port(kk:in std_logic_vector(2 downto 0);
+       din0,din1,din2:in std_logic_vector(3 downto 0);
+       din4:in std_logic_vector(2 downto 0);
+       dout0,dout1,dout2,dout3,dout4:out std_logic_vector(4 downto 0));
+end data_change;
+architecture art of data_change is
+  begin
+  process(kk,din0,din1,din2,din3,din4)
+  begin 
+  case kk is 
+
+  when "000" =>
+  dout4<="00"&din4;
+  dout3<='0'&din3(3 to 0);
+  --dout3<='0'&din3(3 downto 0);
+  dout2<='0'&din2;
+  dout1<='1'&din1;
+  dout0<='0'&din0;
+
+  when "001" =>
+  dout4<="00"&din4;
+  dout3<='0'&din3(3 to 0);
+  --dout3<='0'&din3(3 downto 0);
+  dout2<='1'&din2;
+  dout1<='0'&din1;
+  dout0<='0'&din0;
+
+  when "010" =>
+  dout4<="00"&din4;
+  dout3<='0'&din3(3 to 0);
+  --dout3<='0'&din3(3 downto 0);
+  dout2<='0'&din2;
+  dout1<='0'&din1;
+  dout0<='0'&din0;
+
+  when others =>null;
+  end case;
+  end process;
+end art;
+
+

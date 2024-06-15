@@ -1,0 +1,43 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+entity cnt60 is
+    port(ld:in std_logic;
+         clk:in sta_logic;
+         data:in std_logic_vector(5 downto 0);
+         num:buffer std_logic_vector(5 downto 0);
+         co:out std_logic);
+end entity cnt60;
+architecture art of cnt60 is 
+    begin
+        process(clk,ld) is
+            begin
+                if(ld='0') then
+                    num<=data;
+                elsif clk'event and clk='1' then
+                    if num="111011" then --59
+                        num<="000000";co<='1';
+                    else
+                        num<=num+1;co<='0';
+                    end if;
+                end if;
+        end process;     
+end architecture;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

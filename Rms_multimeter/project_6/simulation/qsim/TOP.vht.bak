@@ -1,0 +1,45 @@
+-- vhdl test bench template for design  :  top
+-- 
+-- simulation tool : modelsim-altera (vhdl)
+-- 
+
+library ieee;                                               
+use ieee.std_logic_1164.all;                                
+
+entity top_vhd_tst is
+end top_vhd_tst;
+architecture top_arch of top_vhd_tst is
+-- constants                                                 
+-- signals                                                   
+signal clk24M : std_logic:='1';
+signal dout : std_logic_vector(7 downto 0):="00000000";
+signal key : std_logic_vector(2 downto 0):="000";
+--signal s_shizaigonglv : std_logic_vector(17 downto 0):="000000000000000000";
+signal sel : std_logic_vector(7 downto 0):="00000000";
+constant clk_period:time:=10 ps;
+component top
+	port (
+	clk24M : in std_logic;
+	dout : buffer std_logic_vector(7 downto 0);
+	key : in std_logic_vector(2 downto 0);
+	--s_shizaigonglv : buffer std_logic_vector(17 downto 0);
+	sel : buffer std_logic_vector(7 downto 0));
+end component;
+begin
+	i1 : top
+	port map (
+-- list connections between master ports and signals
+	clk24M => clk24M,
+	dout => dout,
+	key => key,
+	--s_shizaigonglv => s_shizaigonglv,
+	sel => sel,
+	);
+	clk24M <= not clk24M after clk_period/2; 
+ ji:process
+ begin
+	key<="000";
+	wait;
+	end process;
+
+end top_arch;

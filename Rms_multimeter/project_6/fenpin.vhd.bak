@@ -1,0 +1,39 @@
+library ieee;
+use ieee.std_Logic_1164.all;
+use ieee.std_logic_unsigned.all;
+entity fenpin is 
+  port(clk_24M:in std_logic;
+  --The newly generated clock has 80K 8K 24M
+      new_clk_8K:out std_logic;
+      new_clk_80k:out std_logic;
+       new_clk_24M:out std_logic);
+end entity fenpin;
+architecture art of fenpin is 
+begin 
+  new_clk_24M<=clk_24M;
+  process(clk_24M)
+  variable m_8k:std_logic;
+  variable m_80k:std_logic;
+  variable data_8k:integer range 0 to 2999;--8k
+  variable data_80k:integer range 0 to 299;--80k
+  begin 
+    if (clk_24M'event and clk_24M='1') then
+      --if data_8k<2999 then----8k--divide 3000
+      --if data_8k<29 then--divide 30
+        data_8k:=data_8k+1;
+      else 
+        data_8k:=0;
+        m_8k:=not(m_8k);
+      end if;
+    --if data_80k<299 then--80k--divide 300
+    --if data_80k<2 then--divide 3
+      data_80k:=data_80k+1;
+    else 
+      data_80k:=0;
+      m_80k:=not(m_80k);
+    end if;
+    new_clk_8K<=m_8k;
+    new_clk_80K<=m_80k;
+    end if;
+  end process;
+end art;

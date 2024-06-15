@@ -1,0 +1,191 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+# Date created = 20:12:46  April 24, 2023
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		TOP_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+
+# Project-Wide Assignments
+# ========================
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:35:32  APRIL 22, 2023"
+set_global_assignment -name LAST_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+
+# Analysis & Synthesis Assignments
+# ================================
+set_global_assignment -name FAMILY "Cyclone III"
+
+# Fitter Assignments
+# ==================
+set_global_assignment -name DEVICE EP3C55F484C8
+
+# EDA Netlist Writer Assignments
+# ==============================
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+
+# start EDA_TOOL_SETTINGS(eda_simulation)
+# ---------------------------------------
+
+	# EDA Netlist Writer Assignments
+	# ==============================
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "E:/quartus/EDA_PROJECT/project_5_ok/simulation/qsim/" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+
+# end EDA_TOOL_SETTINGS(eda_simulation)
+# -------------------------------------
+
+# -------------------
+# start ENTITY(CNT60)
+
+	# start DESIGN_PARTITION(Top)
+	# ---------------------------
+
+		# Incremental Compilation Assignments
+		# ===================================
+
+	# end DESIGN_PARTITION(Top)
+	# -------------------------
+
+# end ENTITY(CNT60)
+# -----------------
+
+# -------------------
+# start ENTITY(cnt60)
+
+	# start DESIGN_PARTITION(Top)
+	# ---------------------------
+
+		# Incremental Compilation Assignments
+		# ===================================
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity cnt60 -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity cnt60 -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity cnt60 -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -entity cnt60 -section_id Top
+
+	# end DESIGN_PARTITION(Top)
+	# -------------------------
+
+# end ENTITY(cnt60)
+# -----------------
+set_global_assignment -name TOP_LEVEL_ENTITY TOP
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity cnt30 -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity cnt30 -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity cnt30 -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -entity cnt30 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity CNT60 -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity CNT60 -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity CNT60 -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -entity CNT60 -section_id Top
+set_global_assignment -name VHDL_FILE DISPLAY.vhd
+set_global_assignment -name VHDL_FILE XSKZQ.vhd
+set_global_assignment -name VHDL_FILE TZKZQ.vhd
+set_global_assignment -name VHDL_FILE TOP.vhd
+set_global_assignment -name VHDL_FILE CNT100.vhd
+set_global_assignment -name VHDL_FILE CNT60.vhd
+set_global_assignment -name VHDL_FILE CNT30.vhd
+set_global_assignment -name VHDL_FILE CNT24.vhd
+set_global_assignment -name VHDL_FILE CNT12.vhd
+set_global_assignment -name VHDL_FILE CNT7.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE CNT30.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE CNT60.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE CNT7.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE CNT12.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE CNT24.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE CNT100.vwf
+set_global_assignment -name VHDL_FILE YMQ47.vhd
+set_global_assignment -name VHDL_FILE YMQ38.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE YMQ47.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE YMQ28.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE YMQ38.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE DISPLAY.vwf
+set_global_assignment -name VHDL_FILE CLKGEN.vhd
+set_global_assignment -name VHDL_FILE LED_XS.vhd
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity CNT30 -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity CNT30 -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity CNT30 -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -entity CNT30 -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE TZKZ.vwf
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_P20 -to clk
+set_location_assignment PIN_E7 -to clr
+set_location_assignment PIN_V16 -to com[7]
+set_location_assignment PIN_AA17 -to com[6]
+set_location_assignment PIN_U22 -to com[5]
+set_location_assignment PIN_V22 -to com[4]
+set_location_assignment PIN_W22 -to com[3]
+set_location_assignment PIN_Y22 -to com[2]
+set_location_assignment PIN_Y21 -to com[1]
+set_location_assignment PIN_AB20 -to com[0]
+set_location_assignment PIN_U12 -to led1
+set_location_assignment PIN_V12 -to led2
+set_location_assignment PIN_V15 -to led3
+set_location_assignment PIN_W13 -to led4
+set_location_assignment PIN_W15 -to led5
+set_location_assignment PIN_Y17 -to led6
+set_location_assignment PIN_R16 -to led7
+set_location_assignment PIN_F8 -to led8
+set_location_assignment PIN_M19 -to seg[7]
+set_location_assignment PIN_M21 -to seg[6]
+set_location_assignment PIN_N20 -to seg[5]
+set_location_assignment PIN_N21 -to seg[4]
+set_location_assignment PIN_P21 -to seg[3]
+set_location_assignment PIN_R21 -to seg[2]
+set_location_assignment PIN_W20 -to seg[1]
+set_location_assignment PIN_AA20 -to seg[0]
+set_location_assignment PIN_N18 -to key1
+set_location_assignment PIN_M20 -to key2
+set_location_assignment PIN_AA15 -to key3
+set_location_assignment PIN_V13 -to key4
+set_location_assignment PIN_D6 -to key5
+set_location_assignment PIN_C8 -to key6
+set_global_assignment -name VECTOR_WAVEFORM_FILE TOP.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE LED.vwf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity led_xs -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity led_xs -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity led_xs -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -entity led_xs -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE LED_XS.vwf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity LED_XS -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity LED_XS -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity LED_XS -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -entity LED_XS -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

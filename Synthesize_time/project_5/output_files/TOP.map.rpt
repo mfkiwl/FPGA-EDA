@@ -1,0 +1,1112 @@
+Analysis & Synthesis report for TOP
+Tue May 09 12:52:38 2023
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |TOP|TZKZQ:u10|mode
+  9. User-Specified and Inferred Latches
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for Inferred Entity Instance: XSKZQ:u11|lpm_divide:Div2
+ 14. Parameter Settings for Inferred Entity Instance: XSKZQ:u11|lpm_divide:Div1
+ 15. Parameter Settings for Inferred Entity Instance: XSKZQ:u11|lpm_divide:Div0
+ 16. Parameter Settings for Inferred Entity Instance: XSKZQ:u11|lpm_divide:Div3
+ 17. Parameter Settings for Inferred Entity Instance: XSKZQ:u11|lpm_divide:Div4
+ 18. Parameter Settings for Inferred Entity Instance: XSKZQ:u11|lpm_divide:Div5
+ 19. Port Connectivity Checks: "CNT100:u8"
+ 20. Elapsed Time Per Partition
+ 21. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue May 09 12:52:38 2023       ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
+; Revision Name                      ; TOP                                         ;
+; Top-level Entity Name              ; TOP                                         ;
+; Family                             ; Cyclone III                                 ;
+; Total logic elements               ; 556                                         ;
+;     Total combinational functions  ; 556                                         ;
+;     Dedicated logic registers      ; 102                                         ;
+; Total registers                    ; 102                                         ;
+; Total pins                         ; 44                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP3C55F484C8       ;                    ;
+; Top-level entity name                                                      ; TOP                ; TOP                ;
+; Family name                                                                ; Cyclone III        ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 12          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-12        ; < 0.1%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                           ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                       ; Library ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------+---------+
+; DISPLAY.vhd                      ; yes             ; User VHDL File               ; E:/quartus/EDA_PROJECT/project_5_ok/DISPLAY.vhd                    ;         ;
+; XSKZQ.vhd                        ; yes             ; User VHDL File               ; E:/quartus/EDA_PROJECT/project_5_ok/XSKZQ.vhd                      ;         ;
+; TZKZQ.vhd                        ; yes             ; User VHDL File               ; E:/quartus/EDA_PROJECT/project_5_ok/TZKZQ.vhd                      ;         ;
+; TOP.vhd                          ; yes             ; User VHDL File               ; E:/quartus/EDA_PROJECT/project_5_ok/TOP.vhd                        ;         ;
+; CNT100.vhd                       ; yes             ; User VHDL File               ; E:/quartus/EDA_PROJECT/project_5_ok/CNT100.vhd                     ;         ;
+; CNT60.vhd                        ; yes             ; User VHDL File               ; E:/quartus/EDA_PROJECT/project_5_ok/CNT60.vhd                      ;         ;
+; CNT30.vhd                        ; yes             ; User VHDL File               ; E:/quartus/EDA_PROJECT/project_5_ok/CNT30.vhd                      ;         ;
+; CNT24.vhd                        ; yes             ; User VHDL File               ; E:/quartus/EDA_PROJECT/project_5_ok/CNT24.vhd                      ;         ;
+; CNT12.vhd                        ; yes             ; User VHDL File               ; E:/quartus/EDA_PROJECT/project_5_ok/CNT12.vhd                      ;         ;
+; CNT7.vhd                         ; yes             ; User VHDL File               ; E:/quartus/EDA_PROJECT/project_5_ok/CNT7.vhd                       ;         ;
+; CLKGEN.vhd                       ; yes             ; User VHDL File               ; E:/quartus/EDA_PROJECT/project_5_ok/CLKGEN.vhd                     ;         ;
+; LED_XS.vhd                       ; yes             ; User VHDL File               ; E:/quartus/EDA_PROJECT/project_5_ok/LED_XS.vhd                     ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
+; aglobal131.inc                   ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/aglobal131.inc      ;         ;
+; db/lpm_divide_7gm.tdf            ; yes             ; Auto-Generated Megafunction  ; E:/quartus/EDA_PROJECT/project_5_ok/db/lpm_divide_7gm.tdf          ;         ;
+; db/sign_div_unsign_8kh.tdf       ; yes             ; Auto-Generated Megafunction  ; E:/quartus/EDA_PROJECT/project_5_ok/db/sign_div_unsign_8kh.tdf     ;         ;
+; db/alt_u_div_u7f.tdf             ; yes             ; Auto-Generated Megafunction  ; E:/quartus/EDA_PROJECT/project_5_ok/db/alt_u_div_u7f.tdf           ;         ;
+; db/add_sub_1tc.tdf               ; yes             ; Auto-Generated Megafunction  ; E:/quartus/EDA_PROJECT/project_5_ok/db/add_sub_1tc.tdf             ;         ;
+; db/add_sub_2tc.tdf               ; yes             ; Auto-Generated Megafunction  ; E:/quartus/EDA_PROJECT/project_5_ok/db/add_sub_2tc.tdf             ;         ;
+; db/lpm_divide_8gm.tdf            ; yes             ; Auto-Generated Megafunction  ; E:/quartus/EDA_PROJECT/project_5_ok/db/lpm_divide_8gm.tdf          ;         ;
+; db/sign_div_unsign_9kh.tdf       ; yes             ; Auto-Generated Megafunction  ; E:/quartus/EDA_PROJECT/project_5_ok/db/sign_div_unsign_9kh.tdf     ;         ;
+; db/alt_u_div_08f.tdf             ; yes             ; Auto-Generated Megafunction  ; E:/quartus/EDA_PROJECT/project_5_ok/db/alt_u_div_08f.tdf           ;         ;
+; db/lpm_divide_6gm.tdf            ; yes             ; Auto-Generated Megafunction  ; E:/quartus/EDA_PROJECT/project_5_ok/db/lpm_divide_6gm.tdf          ;         ;
+; db/sign_div_unsign_7kh.tdf       ; yes             ; Auto-Generated Megafunction  ; E:/quartus/EDA_PROJECT/project_5_ok/db/sign_div_unsign_7kh.tdf     ;         ;
+; db/alt_u_div_s7f.tdf             ; yes             ; Auto-Generated Megafunction  ; E:/quartus/EDA_PROJECT/project_5_ok/db/alt_u_div_s7f.tdf           ;         ;
+; db/lpm_divide_9gm.tdf            ; yes             ; Auto-Generated Megafunction  ; E:/quartus/EDA_PROJECT/project_5_ok/db/lpm_divide_9gm.tdf          ;         ;
+; db/sign_div_unsign_akh.tdf       ; yes             ; Auto-Generated Megafunction  ; E:/quartus/EDA_PROJECT/project_5_ok/db/sign_div_unsign_akh.tdf     ;         ;
+; db/alt_u_div_28f.tdf             ; yes             ; Auto-Generated Megafunction  ; E:/quartus/EDA_PROJECT/project_5_ok/db/alt_u_div_28f.tdf           ;         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                    ;
++---------------------------------------------+------------------+
+; Resource                                    ; Usage            ;
++---------------------------------------------+------------------+
+; Estimated Total logic elements              ; 556              ;
+;                                             ;                  ;
+; Total combinational functions               ; 556              ;
+; Logic element usage by number of LUT inputs ;                  ;
+;     -- 4 input functions                    ; 217              ;
+;     -- 3 input functions                    ; 122              ;
+;     -- <=2 input functions                  ; 217              ;
+;                                             ;                  ;
+; Logic elements by mode                      ;                  ;
+;     -- normal mode                          ; 447              ;
+;     -- arithmetic mode                      ; 109              ;
+;                                             ;                  ;
+; Total registers                             ; 102              ;
+;     -- Dedicated logic registers            ; 102              ;
+;     -- I/O registers                        ; 0                ;
+;                                             ;                  ;
+; I/O pins                                    ; 44               ;
+; Embedded Multiplier 9-bit elements          ; 0                ;
+; Maximum fan-out node                        ; CLKGEN:u1|Equal0 ;
+; Maximum fan-out                             ; 63               ;
+; Total fan-out                               ; 2022             ;
+; Average fan-out                             ; 2.71             ;
++---------------------------------------------+------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                   ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                            ; Library Name ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------+--------------+
+; |TOP                                      ; 556 (0)           ; 102 (0)      ; 0           ; 0            ; 0       ; 0         ; 44   ; 0            ; |TOP                                                                                                           ; work         ;
+;    |CLKGEN:u1|                            ; 7 (7)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|CLKGEN:u1                                                                                                 ; work         ;
+;    |CNT100:u8|                            ; 30 (30)           ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|CNT100:u8                                                                                                 ; work         ;
+;    |CNT12:u3|                             ; 17 (17)           ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|CNT12:u3                                                                                                  ; work         ;
+;    |CNT24:u4|                             ; 23 (23)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|CNT24:u4                                                                                                  ; work         ;
+;    |CNT30:u5|                             ; 39 (39)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|CNT30:u5                                                                                                  ; work         ;
+;    |CNT60:u6|                             ; 40 (40)           ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|CNT60:u6                                                                                                  ; work         ;
+;    |CNT60:u7|                             ; 40 (40)           ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|CNT60:u7                                                                                                  ; work         ;
+;    |CNT7:u2|                              ; 10 (10)           ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|CNT7:u2                                                                                                   ; work         ;
+;    |DISPLAY:u9|                           ; 43 (43)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|DISPLAY:u9                                                                                                ; work         ;
+;    |TZKZQ:u10|                            ; 112 (112)         ; 50 (50)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|TZKZQ:u10                                                                                                 ; work         ;
+;    |XSKZQ:u11|                            ; 195 (54)          ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|XSKZQ:u11                                                                                                 ; work         ;
+;       |lpm_divide:Div0|                   ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|XSKZQ:u11|lpm_divide:Div0                                                                                 ; work         ;
+;          |lpm_divide_8gm:auto_generated|  ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|XSKZQ:u11|lpm_divide:Div0|lpm_divide_8gm:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_9kh:divider| ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|XSKZQ:u11|lpm_divide:Div0|lpm_divide_8gm:auto_generated|sign_div_unsign_9kh:divider                       ; work         ;
+;                |alt_u_div_08f:divider|    ; 30 (30)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|XSKZQ:u11|lpm_divide:Div0|lpm_divide_8gm:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_08f:divider ; work         ;
+;       |lpm_divide:Div1|                   ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|XSKZQ:u11|lpm_divide:Div1                                                                                 ; work         ;
+;          |lpm_divide_8gm:auto_generated|  ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|XSKZQ:u11|lpm_divide:Div1|lpm_divide_8gm:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_9kh:divider| ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|XSKZQ:u11|lpm_divide:Div1|lpm_divide_8gm:auto_generated|sign_div_unsign_9kh:divider                       ; work         ;
+;                |alt_u_div_08f:divider|    ; 30 (30)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|XSKZQ:u11|lpm_divide:Div1|lpm_divide_8gm:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_08f:divider ; work         ;
+;       |lpm_divide:Div2|                   ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|XSKZQ:u11|lpm_divide:Div2                                                                                 ; work         ;
+;          |lpm_divide_7gm:auto_generated|  ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|XSKZQ:u11|lpm_divide:Div2|lpm_divide_7gm:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_8kh:divider| ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|XSKZQ:u11|lpm_divide:Div2|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider                       ; work         ;
+;                |alt_u_div_u7f:divider|    ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|XSKZQ:u11|lpm_divide:Div2|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_u7f:divider ; work         ;
+;       |lpm_divide:Div3|                   ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|XSKZQ:u11|lpm_divide:Div3                                                                                 ; work         ;
+;          |lpm_divide_7gm:auto_generated|  ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|XSKZQ:u11|lpm_divide:Div3|lpm_divide_7gm:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_8kh:divider| ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|XSKZQ:u11|lpm_divide:Div3|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider                       ; work         ;
+;                |alt_u_div_u7f:divider|    ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|XSKZQ:u11|lpm_divide:Div3|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_u7f:divider ; work         ;
+;       |lpm_divide:Div4|                   ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|XSKZQ:u11|lpm_divide:Div4                                                                                 ; work         ;
+;          |lpm_divide_6gm:auto_generated|  ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|XSKZQ:u11|lpm_divide:Div4|lpm_divide_6gm:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_7kh:divider| ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|XSKZQ:u11|lpm_divide:Div4|lpm_divide_6gm:auto_generated|sign_div_unsign_7kh:divider                       ; work         ;
+;                |alt_u_div_s7f:divider|    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|XSKZQ:u11|lpm_divide:Div4|lpm_divide_6gm:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_s7f:divider ; work         ;
+;       |lpm_divide:Div5|                   ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|XSKZQ:u11|lpm_divide:Div5                                                                                 ; work         ;
+;          |lpm_divide_9gm:auto_generated|  ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|XSKZQ:u11|lpm_divide:Div5|lpm_divide_9gm:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_akh:divider| ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|XSKZQ:u11|lpm_divide:Div5|lpm_divide_9gm:auto_generated|sign_div_unsign_akh:divider                       ; work         ;
+;                |alt_u_div_28f:divider|    ; 43 (43)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|XSKZQ:u11|lpm_divide:Div5|lpm_divide_9gm:auto_generated|sign_div_unsign_akh:divider|alt_u_div_28f:divider ; work         ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |TOP|TZKZQ:u10|mode                                                                                                     ;
++---------------+-------------+---------------+--------------+--------------+---------------+--------------+--------------+---------------+
+; Name          ; mode.normal ; mode.year_set ; mode.mon_set ; mode.day_set ; mode.hour_set ; mode.min_set ; mode.sec_set ; mode.week_set ;
++---------------+-------------+---------------+--------------+--------------+---------------+--------------+--------------+---------------+
+; mode.week_set ; 0           ; 0             ; 0            ; 0            ; 0             ; 0            ; 0            ; 0             ;
+; mode.sec_set  ; 0           ; 0             ; 0            ; 0            ; 0             ; 0            ; 1            ; 1             ;
+; mode.min_set  ; 0           ; 0             ; 0            ; 0            ; 0             ; 1            ; 0            ; 1             ;
+; mode.hour_set ; 0           ; 0             ; 0            ; 0            ; 1             ; 0            ; 0            ; 1             ;
+; mode.day_set  ; 0           ; 0             ; 0            ; 1            ; 0             ; 0            ; 0            ; 1             ;
+; mode.mon_set  ; 0           ; 0             ; 1            ; 0            ; 0             ; 0            ; 0            ; 1             ;
+; mode.year_set ; 0           ; 1             ; 0            ; 0            ; 0             ; 0            ; 0            ; 1             ;
+; mode.normal   ; 1           ; 0             ; 0            ; 0            ; 0             ; 0            ; 0            ; 1             ;
++---------------+-------------+---------------+--------------+--------------+---------------+--------------+--------------+---------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                ;
++-----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------+------------------------+
+; DISPLAY:u9|com[0]                                   ; DISPLAY:u9|com[7]   ; yes                    ;
+; DISPLAY:u9|com[1]                                   ; DISPLAY:u9|com[7]   ; yes                    ;
+; DISPLAY:u9|com[2]                                   ; DISPLAY:u9|Equal0   ; yes                    ;
+; DISPLAY:u9|com[3]                                   ; DISPLAY:u9|com[7]   ; yes                    ;
+; DISPLAY:u9|com[4]                                   ; DISPLAY:u9|com[7]   ; yes                    ;
+; DISPLAY:u9|com[6]                                   ; DISPLAY:u9|com[7]   ; yes                    ;
+; DISPLAY:u9|com[7]                                   ; DISPLAY:u9|com[7]   ; yes                    ;
+; DISPLAY:u9|bcd[0]                                   ; DISPLAY:u9|com[7]   ; yes                    ;
+; DISPLAY:u9|bcd[1]                                   ; DISPLAY:u9|com[7]   ; yes                    ;
+; DISPLAY:u9|bcd[2]                                   ; DISPLAY:u9|com[7]   ; yes                    ;
+; DISPLAY:u9|bcd[3]                                   ; DISPLAY:u9|com[7]   ; yes                    ;
+; XSKZQ:u11|temp1[0]                                  ; XSKZQ:u11|cnt[0]    ; yes                    ;
+; XSKZQ:u11|temp2[0]                                  ; XSKZQ:u11|cnt[0]    ; yes                    ;
+; XSKZQ:u11|temp1[1]                                  ; XSKZQ:u11|cnt[0]    ; yes                    ;
+; XSKZQ:u11|temp2[1]                                  ; XSKZQ:u11|cnt[0]    ; yes                    ;
+; XSKZQ:u11|temp1[2]                                  ; XSKZQ:u11|cnt[0]    ; yes                    ;
+; XSKZQ:u11|temp2[2]                                  ; XSKZQ:u11|cnt[0]    ; yes                    ;
+; XSKZQ:u11|temp1[3]                                  ; XSKZQ:u11|cnt[0]    ; yes                    ;
+; XSKZQ:u11|temp2[3]                                  ; XSKZQ:u11|cnt[0]    ; yes                    ;
+; CNT30:u5|total_days[0]                              ; CNT30:u5|Mux2       ; yes                    ;
+; CNT30:u5|total_days[1]                              ; CNT30:u5|Mux2       ; yes                    ;
+; Number of user-specified and inferred latches = 21  ;                     ;                        ;
++-----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; CNT30:u5|maxday[2..4]                 ; Stuck at VCC due to stuck port data_in ;
+; TZKZQ:u10|mode.normal                 ; Lost fanout                            ;
+; Total Number of Removed Registers = 4 ;                                        ;
++---------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 102   ;
+; Number of registers using Synchronous Clear  ; 6     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 38    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 71    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |TOP|TZKZQ:u10|sec[3]      ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |TOP|TZKZQ:u10|min[4]      ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |TOP|TZKZQ:u10|hour[3]     ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |TOP|TZKZQ:u10|day[3]      ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |TOP|TZKZQ:u10|mon[2]      ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |TOP|TZKZQ:u10|year[6]     ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |TOP|TZKZQ:u10|week[0]     ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 35 LEs               ; 0 LEs                  ; No         ; |TOP|TZKZQ:u10|mode        ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |TOP|DISPLAY:u9|com[1]     ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |TOP|XSKZQ:u11|Mux2        ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; No         ; |TOP|XSKZQ:u11|Mux6        ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |TOP|XSKZQ:u11|Add2        ;
+; 11:1               ; 4 bits    ; 28 LEs        ; 8 LEs                ; 20 LEs                 ; No         ; |TOP|DISPLAY:u9|bcd[1]     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: XSKZQ:u11|lpm_divide:Div2 ;
++------------------------+----------------+----------------------------------+
+; Parameter Name         ; Value          ; Type                             ;
++------------------------+----------------+----------------------------------+
+; LPM_WIDTHN             ; 5              ; Untyped                          ;
+; LPM_WIDTHD             ; 4              ; Untyped                          ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                          ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                          ;
+; LPM_PIPELINE           ; 0              ; Untyped                          ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                          ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                          ;
+; CBXI_PARAMETER         ; lpm_divide_7gm ; Untyped                          ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                          ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                          ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                     ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                   ;
++------------------------+----------------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: XSKZQ:u11|lpm_divide:Div1 ;
++------------------------+----------------+----------------------------------+
+; Parameter Name         ; Value          ; Type                             ;
++------------------------+----------------+----------------------------------+
+; LPM_WIDTHN             ; 6              ; Untyped                          ;
+; LPM_WIDTHD             ; 4              ; Untyped                          ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                          ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                          ;
+; LPM_PIPELINE           ; 0              ; Untyped                          ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                          ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                          ;
+; CBXI_PARAMETER         ; lpm_divide_8gm ; Untyped                          ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                          ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                          ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                     ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                   ;
++------------------------+----------------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: XSKZQ:u11|lpm_divide:Div0 ;
++------------------------+----------------+----------------------------------+
+; Parameter Name         ; Value          ; Type                             ;
++------------------------+----------------+----------------------------------+
+; LPM_WIDTHN             ; 6              ; Untyped                          ;
+; LPM_WIDTHD             ; 4              ; Untyped                          ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                          ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                          ;
+; LPM_PIPELINE           ; 0              ; Untyped                          ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                          ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                          ;
+; CBXI_PARAMETER         ; lpm_divide_8gm ; Untyped                          ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                          ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                          ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                     ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                   ;
++------------------------+----------------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: XSKZQ:u11|lpm_divide:Div3 ;
++------------------------+----------------+----------------------------------+
+; Parameter Name         ; Value          ; Type                             ;
++------------------------+----------------+----------------------------------+
+; LPM_WIDTHN             ; 5              ; Untyped                          ;
+; LPM_WIDTHD             ; 4              ; Untyped                          ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                          ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                          ;
+; LPM_PIPELINE           ; 0              ; Untyped                          ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                          ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                          ;
+; CBXI_PARAMETER         ; lpm_divide_7gm ; Untyped                          ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                          ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                          ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                     ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                   ;
++------------------------+----------------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: XSKZQ:u11|lpm_divide:Div4 ;
++------------------------+----------------+----------------------------------+
+; Parameter Name         ; Value          ; Type                             ;
++------------------------+----------------+----------------------------------+
+; LPM_WIDTHN             ; 4              ; Untyped                          ;
+; LPM_WIDTHD             ; 4              ; Untyped                          ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                          ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                          ;
+; LPM_PIPELINE           ; 0              ; Untyped                          ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                          ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                          ;
+; CBXI_PARAMETER         ; lpm_divide_6gm ; Untyped                          ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                          ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                          ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                     ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                   ;
++------------------------+----------------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: XSKZQ:u11|lpm_divide:Div5 ;
++------------------------+----------------+----------------------------------+
+; Parameter Name         ; Value          ; Type                             ;
++------------------------+----------------+----------------------------------+
+; LPM_WIDTHN             ; 7              ; Untyped                          ;
+; LPM_WIDTHD             ; 4              ; Untyped                          ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                          ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                          ;
+; LPM_PIPELINE           ; 0              ; Untyped                          ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                          ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                          ;
+; CBXI_PARAMETER         ; lpm_divide_9gm ; Untyped                          ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                          ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                          ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                     ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                   ;
++------------------------+----------------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CNT100:u8"                                                                          ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; co   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+    Info: Processing started: Tue May 09 12:52:36 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TOP -c TOP
+Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
+Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_NEW_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PIN_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PROMOTE_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_TYPE for node ""
+Warning (136002): Ignored duplicate of assignment ALLOW_MULTIPLE_PERSONAS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ASD_REGION_ID for node ""
+Warning (136002): Ignored duplicate of assignment CROSS_BOUNDARY_OPTIMIZATIONS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_CONSTANTS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_INVERSIONS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
+Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ENABLE_STRICT_PRESERVATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
+Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
+Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_NEW_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PIN_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PROMOTE_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_TYPE for node ""
+Warning (136002): Ignored duplicate of assignment ALLOW_MULTIPLE_PERSONAS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ASD_REGION_ID for node ""
+Warning (136002): Ignored duplicate of assignment CROSS_BOUNDARY_OPTIMIZATIONS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_CONSTANTS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_INVERSIONS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
+Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ENABLE_STRICT_PRESERVATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
+Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
+Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_NEW_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PIN_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PROMOTE_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_TYPE for node ""
+Warning (136002): Ignored duplicate of assignment ALLOW_MULTIPLE_PERSONAS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ASD_REGION_ID for node ""
+Warning (136002): Ignored duplicate of assignment CROSS_BOUNDARY_OPTIMIZATIONS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_CONSTANTS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_INVERSIONS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
+Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ENABLE_STRICT_PRESERVATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
+Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
+Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_NEW_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PIN_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PROMOTE_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_TYPE for node ""
+Warning (136002): Ignored duplicate of assignment ALLOW_MULTIPLE_PERSONAS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ASD_REGION_ID for node ""
+Warning (136002): Ignored duplicate of assignment CROSS_BOUNDARY_OPTIMIZATIONS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_CONSTANTS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_INVERSIONS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
+Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ENABLE_STRICT_PRESERVATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
+Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
+Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_NEW_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PIN_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PROMOTE_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_TYPE for node ""
+Warning (136002): Ignored duplicate of assignment ALLOW_MULTIPLE_PERSONAS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ASD_REGION_ID for node ""
+Warning (136002): Ignored duplicate of assignment CROSS_BOUNDARY_OPTIMIZATIONS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_CONSTANTS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_INVERSIONS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
+Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ENABLE_STRICT_PRESERVATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
+Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
+Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_NEW_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PIN_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PROMOTE_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_TYPE for node ""
+Warning (136002): Ignored duplicate of assignment ALLOW_MULTIPLE_PERSONAS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ASD_REGION_ID for node ""
+Warning (136002): Ignored duplicate of assignment CROSS_BOUNDARY_OPTIMIZATIONS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_CONSTANTS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_INVERSIONS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
+Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ENABLE_STRICT_PRESERVATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
+Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
+Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_NEW_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PIN_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PROMOTE_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_TYPE for node ""
+Warning (136002): Ignored duplicate of assignment ALLOW_MULTIPLE_PERSONAS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ASD_REGION_ID for node ""
+Warning (136002): Ignored duplicate of assignment CROSS_BOUNDARY_OPTIMIZATIONS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_CONSTANTS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_INVERSIONS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
+Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ENABLE_STRICT_PRESERVATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
+Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
+Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_NEW_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PIN_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PROMOTE_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_TYPE for node ""
+Warning (136002): Ignored duplicate of assignment ALLOW_MULTIPLE_PERSONAS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ASD_REGION_ID for node ""
+Warning (136002): Ignored duplicate of assignment CROSS_BOUNDARY_OPTIMIZATIONS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_CONSTANTS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_INVERSIONS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
+Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ENABLE_STRICT_PRESERVATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
+Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
+Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_NEW_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PIN_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PROMOTE_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_TYPE for node ""
+Warning (136002): Ignored duplicate of assignment ALLOW_MULTIPLE_PERSONAS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ASD_REGION_ID for node ""
+Warning (136002): Ignored duplicate of assignment CROSS_BOUNDARY_OPTIMIZATIONS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_CONSTANTS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_INVERSIONS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
+Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ENABLE_STRICT_PRESERVATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
+Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
+Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_NEW_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PIN_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PROMOTE_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_TYPE for node ""
+Warning (136002): Ignored duplicate of assignment ALLOW_MULTIPLE_PERSONAS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ASD_REGION_ID for node ""
+Warning (136002): Ignored duplicate of assignment CROSS_BOUNDARY_OPTIMIZATIONS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_CONSTANTS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_INVERSIONS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
+Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ENABLE_STRICT_PRESERVATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
+Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
+Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_NEW_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PIN_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PROMOTE_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_TYPE for node ""
+Warning (136002): Ignored duplicate of assignment ALLOW_MULTIPLE_PERSONAS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ASD_REGION_ID for node ""
+Warning (136002): Ignored duplicate of assignment CROSS_BOUNDARY_OPTIMIZATIONS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_CONSTANTS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_INVERSIONS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
+Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ENABLE_STRICT_PRESERVATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
+Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
+Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_NEW_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PIN_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PROMOTE_ASSIGNMENTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_TYPE for node ""
+Warning (136002): Ignored duplicate of assignment ALLOW_MULTIPLE_PERSONAS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ASD_REGION_ID for node ""
+Warning (136002): Ignored duplicate of assignment CROSS_BOUNDARY_OPTIMIZATIONS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_CONSTANTS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PROPAGATE_INVERSIONS_ON_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
+Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_ENABLE_STRICT_PRESERVATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
+Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file display.vhd
+    Info (12022): Found design unit 1: DISPLAY-art
+    Info (12023): Found entity 1: DISPLAY
+Info (12021): Found 2 design units, including 1 entities, in source file xskzq.vhd
+    Info (12022): Found design unit 1: XSKZQ-art
+    Info (12023): Found entity 1: XSKZQ
+Info (12021): Found 2 design units, including 1 entities, in source file tzkzq.vhd
+    Info (12022): Found design unit 1: tzkzq-art
+    Info (12023): Found entity 1: TZKZQ
+Info (12021): Found 2 design units, including 1 entities, in source file top.vhd
+    Info (12022): Found design unit 1: TOP-art
+    Info (12023): Found entity 1: TOP
+Info (12021): Found 2 design units, including 1 entities, in source file cnt100.vhd
+    Info (12022): Found design unit 1: CNT100-art
+    Info (12023): Found entity 1: CNT100
+Info (12021): Found 2 design units, including 1 entities, in source file cnt60.vhd
+    Info (12022): Found design unit 1: CNT60-art
+    Info (12023): Found entity 1: CNT60
+Info (12021): Found 2 design units, including 1 entities, in source file cnt30.vhd
+    Info (12022): Found design unit 1: CNT30-art
+    Info (12023): Found entity 1: CNT30
+Info (12021): Found 2 design units, including 1 entities, in source file cnt24.vhd
+    Info (12022): Found design unit 1: CNT24-art
+    Info (12023): Found entity 1: CNT24
+Info (12021): Found 2 design units, including 1 entities, in source file cnt12.vhd
+    Info (12022): Found design unit 1: CNT12-art
+    Info (12023): Found entity 1: CNT12
+Info (12021): Found 2 design units, including 1 entities, in source file cnt7.vhd
+    Info (12022): Found design unit 1: CNT7-art
+    Info (12023): Found entity 1: CNT7
+Info (12021): Found 2 design units, including 1 entities, in source file ymq47.vhd
+    Info (12022): Found design unit 1: YMQ47-art
+    Info (12023): Found entity 1: YMQ47
+Info (12021): Found 2 design units, including 1 entities, in source file ymq38.vhd
+    Info (12022): Found design unit 1: YMQ38-art
+    Info (12023): Found entity 1: YMQ38
+Info (12021): Found 2 design units, including 1 entities, in source file clkgen.vhd
+    Info (12022): Found design unit 1: CLKGEN-art
+    Info (12023): Found entity 1: CLKGEN
+Info (12021): Found 2 design units, including 1 entities, in source file led_xs.vhd
+    Info (12022): Found design unit 1: led_xs-art
+    Info (12023): Found entity 1: LED_XS
+Info (12127): Elaborating entity "TOP" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at TOP.vhd(180): object "s_co100" assigned a value but never read
+Info (12128): Elaborating entity "CLKGEN" for hierarchy "CLKGEN:u1"
+Info (12128): Elaborating entity "CNT7" for hierarchy "CNT7:u2"
+Warning (10492): VHDL Process Statement warning at CNT7.vhd(16): signal "data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CNT7.vhd(18): signal "key6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "CNT12" for hierarchy "CNT12:u3"
+Warning (10492): VHDL Process Statement warning at CNT12.vhd(17): signal "data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CNT12.vhd(18): signal "key6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "CNT24" for hierarchy "CNT24:u4"
+Warning (10492): VHDL Process Statement warning at CNT24.vhd(17): signal "data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CNT24.vhd(18): signal "key6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "CNT30" for hierarchy "CNT30:u5"
+Warning (10492): VHDL Process Statement warning at CNT30.vhd(21): signal "year" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CNT30.vhd(51): signal "yue" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CNT30.vhd(75): signal "datain" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CNT30.vhd(76): signal "total_days" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CNT30.vhd(77): signal "key6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at CNT30.vhd(18): inferring latch(es) for signal or variable "total_days", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "total_days[0]" at CNT30.vhd(18)
+Info (10041): Inferred latch for "total_days[1]" at CNT30.vhd(18)
+Info (10041): Inferred latch for "total_days[2]" at CNT30.vhd(18)
+Info (10041): Inferred latch for "total_days[3]" at CNT30.vhd(18)
+Info (10041): Inferred latch for "total_days[4]" at CNT30.vhd(18)
+Info (12128): Elaborating entity "CNT60" for hierarchy "CNT60:u6"
+Warning (10492): VHDL Process Statement warning at CNT60.vhd(20): signal "data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CNT60.vhd(21): signal "key6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "CNT100" for hierarchy "CNT100:u8"
+Warning (10492): VHDL Process Statement warning at CNT100.vhd(17): signal "data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CNT100.vhd(18): signal "key6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "DISPLAY" for hierarchy "DISPLAY:u9"
+Warning (10492): VHDL Process Statement warning at DISPLAY.vhd(21): signal "key" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at DISPLAY.vhd(25): signal "lbcd" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at DISPLAY.vhd(26): signal "hbcd" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at DISPLAY.vhd(29): signal "lbcd" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at DISPLAY.vhd(30): signal "hbcd" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at DISPLAY.vhd(33): signal "lbcd" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at DISPLAY.vhd(34): signal "hbcd" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at DISPLAY.vhd(39): signal "key" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at DISPLAY.vhd(43): signal "lbcd" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at DISPLAY.vhd(44): signal "hbcd" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at DISPLAY.vhd(47): signal "lbcd" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at DISPLAY.vhd(48): signal "hbcd" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at DISPLAY.vhd(53): signal "key" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at DISPLAY.vhd(57): signal "lbcd" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at DISPLAY.vhd(58): signal "hbcd" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at DISPLAY.vhd(60): signal "lbcd" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at DISPLAY.vhd(61): signal "hbcd" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at DISPLAY.vhd(64): signal "lbcd" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at DISPLAY.vhd(70): signal "bcd" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at DISPLAY.vhd(19): inferring latch(es) for signal or variable "com", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at DISPLAY.vhd(19): inferring latch(es) for signal or variable "bcd", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "bcd[0]" at DISPLAY.vhd(19)
+Info (10041): Inferred latch for "bcd[1]" at DISPLAY.vhd(19)
+Info (10041): Inferred latch for "bcd[2]" at DISPLAY.vhd(19)
+Info (10041): Inferred latch for "bcd[3]" at DISPLAY.vhd(19)
+Info (10041): Inferred latch for "com[0]" at DISPLAY.vhd(19)
+Info (10041): Inferred latch for "com[1]" at DISPLAY.vhd(19)
+Info (10041): Inferred latch for "com[2]" at DISPLAY.vhd(19)
+Info (10041): Inferred latch for "com[3]" at DISPLAY.vhd(19)
+Info (10041): Inferred latch for "com[4]" at DISPLAY.vhd(19)
+Info (10041): Inferred latch for "com[5]" at DISPLAY.vhd(19)
+Info (10041): Inferred latch for "com[6]" at DISPLAY.vhd(19)
+Info (10041): Inferred latch for "com[7]" at DISPLAY.vhd(19)
+Info (12128): Elaborating entity "TZKZQ" for hierarchy "TZKZQ:u10"
+Info (12128): Elaborating entity "XSKZQ" for hierarchy "XSKZQ:u11"
+Warning (10492): VHDL Process Statement warning at XSKZQ.vhd(37): signal "sec" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at XSKZQ.vhd(38): signal "sec" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at XSKZQ.vhd(40): signal "min" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at XSKZQ.vhd(41): signal "min" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at XSKZQ.vhd(43): signal "hour" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at XSKZQ.vhd(44): signal "hour" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at XSKZQ.vhd(46): signal "day" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at XSKZQ.vhd(47): signal "day" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at XSKZQ.vhd(49): signal "mon" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at XSKZQ.vhd(50): signal "mon" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at XSKZQ.vhd(52): signal "year" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at XSKZQ.vhd(53): signal "year" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at XSKZQ.vhd(58): signal "week" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at XSKZQ.vhd(59): signal "week" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at XSKZQ.vhd(64): signal "temp1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at XSKZQ.vhd(78): signal "temp2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at XSKZQ.vhd(34): inferring latch(es) for signal or variable "temp1", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at XSKZQ.vhd(34): inferring latch(es) for signal or variable "temp2", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "temp2[0]" at XSKZQ.vhd(34)
+Info (10041): Inferred latch for "temp2[1]" at XSKZQ.vhd(34)
+Info (10041): Inferred latch for "temp2[2]" at XSKZQ.vhd(34)
+Info (10041): Inferred latch for "temp2[3]" at XSKZQ.vhd(34)
+Info (10041): Inferred latch for "temp1[0]" at XSKZQ.vhd(34)
+Info (10041): Inferred latch for "temp1[1]" at XSKZQ.vhd(34)
+Info (10041): Inferred latch for "temp1[2]" at XSKZQ.vhd(34)
+Info (10041): Inferred latch for "temp1[3]" at XSKZQ.vhd(34)
+Info (12128): Elaborating entity "LED_XS" for hierarchy "LED_XS:u12"
+Info (278001): Inferred 6 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "XSKZQ:u11|Div2"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "XSKZQ:u11|Div1"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "XSKZQ:u11|Div0"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "XSKZQ:u11|Div3"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "XSKZQ:u11|Div4"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "XSKZQ:u11|Div5"
+Info (12130): Elaborated megafunction instantiation "XSKZQ:u11|lpm_divide:Div2"
+Info (12133): Instantiated megafunction "XSKZQ:u11|lpm_divide:Div2" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "5"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_7gm.tdf
+    Info (12023): Found entity 1: lpm_divide_7gm
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_8kh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_8kh
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_u7f.tdf
+    Info (12023): Found entity 1: alt_u_div_u7f
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_1tc.tdf
+    Info (12023): Found entity 1: add_sub_1tc
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_2tc.tdf
+    Info (12023): Found entity 1: add_sub_2tc
+Info (12130): Elaborated megafunction instantiation "XSKZQ:u11|lpm_divide:Div1"
+Info (12133): Instantiated megafunction "XSKZQ:u11|lpm_divide:Div1" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "6"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_8gm.tdf
+    Info (12023): Found entity 1: lpm_divide_8gm
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_9kh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_9kh
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_08f.tdf
+    Info (12023): Found entity 1: alt_u_div_08f
+Info (12130): Elaborated megafunction instantiation "XSKZQ:u11|lpm_divide:Div4"
+Info (12133): Instantiated megafunction "XSKZQ:u11|lpm_divide:Div4" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "4"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_6gm.tdf
+    Info (12023): Found entity 1: lpm_divide_6gm
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_7kh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_7kh
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_s7f.tdf
+    Info (12023): Found entity 1: alt_u_div_s7f
+Info (12130): Elaborated megafunction instantiation "XSKZQ:u11|lpm_divide:Div5"
+Info (12133): Instantiated megafunction "XSKZQ:u11|lpm_divide:Div5" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "7"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_9gm.tdf
+    Info (12023): Found entity 1: lpm_divide_9gm
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_akh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_akh
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_28f.tdf
+    Info (12023): Found entity 1: alt_u_div_28f
+Warning (13012): Latch DISPLAY:u9|com[0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal key1
+Warning (13012): Latch DISPLAY:u9|com[1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal key1
+Warning (13012): Latch DISPLAY:u9|com[3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal key1
+Warning (13012): Latch DISPLAY:u9|com[4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal key1
+Warning (13012): Latch DISPLAY:u9|com[6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal key1
+Warning (13012): Latch DISPLAY:u9|com[7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal key1
+Warning (13012): Latch DISPLAY:u9|bcd[0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal key1
+Warning (13012): Latch DISPLAY:u9|bcd[1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal key1
+Warning (13012): Latch DISPLAY:u9|bcd[2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal key1
+Warning (13012): Latch DISPLAY:u9|bcd[3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal key1
+Warning (13012): Latch CNT30:u5|total_days[0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal TZKZQ:u10|mon[0]
+Warning (13012): Latch CNT30:u5|total_days[1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal TZKZQ:u10|mon[0]
+Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
+    Warning (13310): Register "CNT24:u4|num[0]" is converted into an equivalent circuit using register "CNT24:u4|num[0]~_emulated" and latch "CNT24:u4|num[0]~1"
+    Warning (13310): Register "CNT60:u7|num[0]" is converted into an equivalent circuit using register "CNT60:u7|num[0]~_emulated" and latch "CNT60:u7|num[0]~1"
+    Warning (13310): Register "CNT60:u6|num[0]" is converted into an equivalent circuit using register "CNT60:u6|num[0]~_emulated" and latch "CNT60:u6|num[0]~1"
+    Warning (13310): Register "CNT30:u5|num[0]" is converted into an equivalent circuit using register "CNT30:u5|num[0]~_emulated" and latch "CNT30:u5|num[0]~1"
+    Warning (13310): Register "CNT12:u3|num[0]" is converted into an equivalent circuit using register "CNT12:u3|num[0]~_emulated" and latch "CNT12:u3|num[0]~1"
+    Warning (13310): Register "CNT100:u8|num[0]" is converted into an equivalent circuit using register "CNT100:u8|num[0]~_emulated" and latch "CNT100:u8|num[0]~1"
+    Warning (13310): Register "CNT7:u2|num[0]" is converted into an equivalent circuit using register "CNT7:u2|num[0]~_emulated" and latch "CNT7:u2|num[0]~1"
+    Warning (13310): Register "CNT7:u2|num[1]" is converted into an equivalent circuit using register "CNT7:u2|num[1]~_emulated" and latch "CNT7:u2|num[1]~5"
+    Warning (13310): Register "CNT24:u4|num[1]" is converted into an equivalent circuit using register "CNT24:u4|num[1]~_emulated" and latch "CNT24:u4|num[1]~5"
+    Warning (13310): Register "CNT60:u7|num[1]" is converted into an equivalent circuit using register "CNT60:u7|num[1]~_emulated" and latch "CNT60:u7|num[1]~6"
+    Warning (13310): Register "CNT60:u6|num[1]" is converted into an equivalent circuit using register "CNT60:u6|num[1]~_emulated" and latch "CNT60:u6|num[1]~6"
+    Warning (13310): Register "CNT30:u5|num[1]" is converted into an equivalent circuit using register "CNT30:u5|num[1]~_emulated" and latch "CNT30:u5|num[1]~5"
+    Warning (13310): Register "CNT12:u3|num[1]" is converted into an equivalent circuit using register "CNT12:u3|num[1]~_emulated" and latch "CNT12:u3|num[1]~5"
+    Warning (13310): Register "CNT100:u8|num[1]" is converted into an equivalent circuit using register "CNT100:u8|num[1]~_emulated" and latch "CNT100:u8|num[1]~5"
+    Warning (13310): Register "CNT7:u2|num[2]" is converted into an equivalent circuit using register "CNT7:u2|num[2]~_emulated" and latch "CNT7:u2|num[2]~9"
+    Warning (13310): Register "CNT24:u4|num[2]" is converted into an equivalent circuit using register "CNT24:u4|num[2]~_emulated" and latch "CNT24:u4|num[2]~9"
+    Warning (13310): Register "CNT60:u7|num[2]" is converted into an equivalent circuit using register "CNT60:u7|num[2]~_emulated" and latch "CNT60:u7|num[2]~11"
+    Warning (13310): Register "CNT60:u6|num[2]" is converted into an equivalent circuit using register "CNT60:u6|num[2]~_emulated" and latch "CNT60:u6|num[2]~11"
+    Warning (13310): Register "CNT30:u5|num[2]" is converted into an equivalent circuit using register "CNT30:u5|num[2]~_emulated" and latch "CNT30:u5|num[2]~9"
+    Warning (13310): Register "CNT12:u3|num[2]" is converted into an equivalent circuit using register "CNT12:u3|num[2]~_emulated" and latch "CNT12:u3|num[2]~9"
+    Warning (13310): Register "CNT100:u8|num[2]" is converted into an equivalent circuit using register "CNT100:u8|num[2]~_emulated" and latch "CNT100:u8|num[2]~9"
+    Warning (13310): Register "CNT60:u7|num[3]" is converted into an equivalent circuit using register "CNT60:u7|num[3]~_emulated" and latch "CNT60:u7|num[3]~16"
+    Warning (13310): Register "CNT24:u4|num[3]" is converted into an equivalent circuit using register "CNT24:u4|num[3]~_emulated" and latch "CNT24:u4|num[3]~13"
+    Warning (13310): Register "CNT60:u6|num[3]" is converted into an equivalent circuit using register "CNT60:u6|num[3]~_emulated" and latch "CNT60:u6|num[3]~16"
+    Warning (13310): Register "CNT30:u5|num[3]" is converted into an equivalent circuit using register "CNT30:u5|num[3]~_emulated" and latch "CNT30:u5|num[3]~13"
+    Warning (13310): Register "CNT12:u3|num[3]" is converted into an equivalent circuit using register "CNT12:u3|num[3]~_emulated" and latch "CNT12:u3|num[3]~13"
+    Warning (13310): Register "CNT100:u8|num[3]" is converted into an equivalent circuit using register "CNT100:u8|num[3]~_emulated" and latch "CNT100:u8|num[3]~13"
+    Warning (13310): Register "CNT24:u4|num[4]" is converted into an equivalent circuit using register "CNT24:u4|num[4]~_emulated" and latch "CNT24:u4|num[4]~17"
+    Warning (13310): Register "CNT30:u5|num[4]" is converted into an equivalent circuit using register "CNT30:u5|num[4]~_emulated" and latch "CNT30:u5|num[4]~17"
+    Warning (13310): Register "CNT100:u8|num[4]" is converted into an equivalent circuit using register "CNT100:u8|num[4]~_emulated" and latch "CNT100:u8|num[4]~17"
+    Warning (13310): Register "CNT100:u8|num[5]" is converted into an equivalent circuit using register "CNT100:u8|num[5]~_emulated" and latch "CNT100:u8|num[5]~21"
+    Warning (13310): Register "CNT100:u8|num[6]" is converted into an equivalent circuit using register "CNT100:u8|num[6]~_emulated" and latch "CNT100:u8|num[6]~25"
+    Warning (13310): Register "CNT60:u7|num[5]" is converted into an equivalent circuit using register "CNT60:u7|num[5]~_emulated" and latch "CNT60:u7|num[5]~21"
+    Warning (13310): Register "CNT60:u7|num[4]" is converted into an equivalent circuit using register "CNT60:u7|num[4]~_emulated" and latch "CNT60:u7|num[4]~26"
+    Warning (13310): Register "CNT60:u6|num[5]" is converted into an equivalent circuit using register "CNT60:u6|num[5]~_emulated" and latch "CNT60:u6|num[5]~21"
+    Warning (13310): Register "CNT60:u6|num[4]" is converted into an equivalent circuit using register "CNT60:u6|num[4]~_emulated" and latch "CNT60:u6|num[4]~26"
+    Warning (13310): Register "CNT30:u5|maxday[0]" is converted into an equivalent circuit using register "CNT30:u5|maxday[0]~_emulated" and latch "CNT30:u5|maxday[0]~1"
+    Warning (13310): Register "CNT30:u5|maxday[1]" is converted into an equivalent circuit using register "CNT30:u5|maxday[1]~_emulated" and latch "CNT30:u5|maxday[1]~5"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "led8" is stuck at VCC
+    Warning (13410): Pin "com[5]" is stuck at VCC
+    Warning (13410): Pin "seg[7]" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 1 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 600 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 36 output pins
+    Info (21061): Implemented 556 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 411 warnings
+    Info: Peak virtual memory: 4767 megabytes
+    Info: Processing ended: Tue May 09 12:52:38 2023
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+
